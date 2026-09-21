@@ -3,7 +3,27 @@
   <channel>
     <title>TrueMinutes</title>
     <link>https://github.com/AbhiRishi96/TrueMinutes-releases</link>
-    <description>TrueMinutes update feed. Items appear here after publish-sparkle-update.sh runs.</description>
+    <description>TrueMinutes update feed</description>
     <language>en</language>
+    <item>
+      <title>TrueMinutes 0.9.9</title>
+      <pubDate>Mon, 21 Sep 2026 16:32:12 +0000</pubDate>
+      <sparkle:version>2026092109</sparkle:version>
+      <sparkle:shortVersionString>0.9.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<div><h2>What’s new</h2>
+Unreleased<br/>
+<br/><br/>
+- In-app **Check for Updates** (menu + Settings → About)<br/>
+- Automatic Sparkle check about once per day<br/>
+- Release notes shown before installing an update</div>
+]]></description>
+      <enclosure
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.9.9/TrueMinutes-0.9.9.dmg"
+        length="23944021"
+        type="application/octet-stream"
+        sparkle:edSignature="+iVzqlVv2GVRm926o8OS+9Qz098nLqdjQWrtbjGRDLipqCktsigmBQJ9YWPa+IrS4CUzJ6cEyPm3u/g93Iu5Cw==" />
+    </item>
   </channel>
 </rss>
