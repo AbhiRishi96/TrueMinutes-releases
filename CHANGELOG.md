@@ -2,6 +2,22 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.8.1] — 2026-09-27
+
+This update focuses on making meeting recording stop and microphone-follow behavior more reliable across Google Meet, Microsoft Teams, and Slack Calls.
+
+### Fixed
+- **Google Meet recordings stop after you leave** — TrueMinutes no longer keeps recording just because the browser still has residual audio activity after a Meet call ends.
+- **Google Meet microphone follow is safer** — the local microphone now stays off when mute state is missing, stale, ambiguous, or no longer tied to an active call.
+- **Microsoft Teams screen share stability** — recording is retained through brief Accessibility blackouts during Teams screen sharing, VDI sessions, tab/window switches, and extended-display transitions.
+- **Slack Calls mute sync** — Slack mute/unmute state is detected across sibling call windows so local microphone capture follows the actual call controls more accurately.
+- **Release/update reliability** — Sparkle update publishing now builds, signs, uploads the DMG, and updates the public appcast from CI.
+
+### Notes
+- This build is internally signed, not Apple notarized. If macOS blocks first launch, use the install instructions included in the DMG.
+
+---
+
 ## [0.9.8] — 2026-09-01
 
 Compared to **0.9.7**:

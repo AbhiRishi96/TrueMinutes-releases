@@ -7,41 +7,32 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.8.1</title>
-      <pubDate>Sun, 27 Sep 2026 13:58:09 +0000</pubDate>
-      <sparkle:version>202609271314</sparkle:version>
+      <pubDate>Sun, 27 Sep 2026 14:05:58 +0000</pubDate>
+      <sparkle:version>202609271415</sparkle:version>
       <sparkle:shortVersionString>0.8.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<div>TrueMinutes 0.8.1 (build 202609271314)<br/>
+<div>TrueMinutes 0.8.1 (build 202609271415)<br/>
 <br/><br/>
-Changes included in this automatic main release:<br/>
+This update focuses on making meeting recording stop and microphone-follow behavior more reliable across Google Meet, Microsoft Teams, and Slack Calls.<br/>
 <br/><br/>
-- Bump GitHub Actions to Node 24 (c3efe94)<br/>
-- Authenticate release feed push (b9c65b1)<br/>
-- Normalize Sparkle signing key for CI (a26fea8)<br/>
-- Allow internal signing identity in CI (c954021)<br/>
-- Import release signing identity as PKCS12 (f8f5c9b)<br/>
-- Trust internal signing cert in release CI (1c11acf)<br/>
-- Regenerate Xcode project for release (39df29e)<br/>
-- Fix meeting policy tests for 0.8.1 (399c3a4)<br/>
-- Fix Slack Calls mic sync and Meet leave auto-stop latch. (368fcc9)<br/>
-- Fix leave auto-stop and mic follow latency for 0.8.1 (d8e311f)<br/>
-- Harden Sparkle release publishing (17380a4)<br/>
-- Fix macOS CI and release secret gating (79fca2a)<br/>
-- Set app version to 0.8.0 (0bfb0f0)<br/>
-- Include updater and AXObserver sources in the Xcode project. (fd77134)<br/>
-- Automate Sparkle releases on merge to main. (6698220)<br/>
-- Add Sparkle daily updates with changelog feed. (d7fa7f1)<br/>
-- Drive meeting detection from AXObserver events. (6343f69)<br/>
-- Cut idle CPU by adaptive meeting detection polling. (48b661c)<br/>
-- Keep Whisper downloads alive in the background and default audio retention to 24 hours. (1f5edf3)<br/>
-- Fix installed-model activation, browser mic latch, and leave auto-stop. (e0d4770)</div>
+### Fixed<br/>
+- **Google Meet recordings stop after you leave** — TrueMinutes no longer keeps recording just because the browser still has residual audio activity after a Meet call ends.<br/>
+- **Google Meet microphone follow is safer** — the local microphone now stays off when mute state is missing, stale, ambiguous, or no longer tied to an active call.<br/>
+- **Microsoft Teams screen share stability** — recording is retained through brief Accessibility blackouts during Teams screen sharing, VDI sessions, tab/window switches, and extended-display transitions.<br/>
+- **Slack Calls mute sync** — Slack mute/unmute state is detected across sibling call windows so local microphone capture follows the actual call controls more accurately.<br/>
+- **Release/update reliability** — Sparkle update publishing now builds, signs, uploads the DMG, and updates the public appcast from CI.<br/>
+<br/><br/>
+### Notes<br/>
+- This build is internally signed, not Apple notarized. If macOS blocks first launch, use the install instructions included in the DMG.<br/>
+<br/><br/>
+---</div>
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.1/TrueMinutes-0.8.1.dmg"
-        length="24736910"
+        length="24736867"
         type="application/octet-stream"
-        sparkle:edSignature="hETvhG1Probnor6EuiP/DuQWt81f9AlLbNIwwHfqRgjQsPlnY9MM3CDkjbLwg3QkS3xyWGWWkgKAYthrGpMECw==" />
+        sparkle:edSignature="rK9q8VcsaJjfIe2RsDjetXO1noMn16N3Nky6z721dLAcITiJ98kwdYXIrom/UkL3vibl1HyAA56Jovrp0/QxBQ==" />
     </item>
   </channel>
 </rss>
