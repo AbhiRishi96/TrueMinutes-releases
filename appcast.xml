@@ -5,5 +5,43 @@
     <link>https://github.com/AbhiRishi96/TrueMinutes-releases</link>
     <description>TrueMinutes update feed</description>
     <language>en</language>
+    <item>
+      <title>TrueMinutes 0.8.1</title>
+      <pubDate>Sun, 27 Sep 2026 13:50:38 +0000</pubDate>
+      <sparkle:version>202609271313</sparkle:version>
+      <sparkle:shortVersionString>0.8.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<div>TrueMinutes 0.8.1 (build 202609271313)<br/>
+<br/><br/>
+Changes included in this automatic main release:<br/>
+<br/><br/>
+- Authenticate release feed push (b9c65b1)<br/>
+- Normalize Sparkle signing key for CI (a26fea8)<br/>
+- Allow internal signing identity in CI (c954021)<br/>
+- Import release signing identity as PKCS12 (f8f5c9b)<br/>
+- Trust internal signing cert in release CI (1c11acf)<br/>
+- Regenerate Xcode project for release (39df29e)<br/>
+- Fix meeting policy tests for 0.8.1 (399c3a4)<br/>
+- Fix Slack Calls mic sync and Meet leave auto-stop latch. (368fcc9)<br/>
+- Fix leave auto-stop and mic follow latency for 0.8.1 (d8e311f)<br/>
+- Harden Sparkle release publishing (17380a4)<br/>
+- Fix macOS CI and release secret gating (79fca2a)<br/>
+- Set app version to 0.8.0 (0bfb0f0)<br/>
+- Include updater and AXObserver sources in the Xcode project. (fd77134)<br/>
+- Automate Sparkle releases on merge to main. (6698220)<br/>
+- Add Sparkle daily updates with changelog feed. (d7fa7f1)<br/>
+- Drive meeting detection from AXObserver events. (6343f69)<br/>
+- Cut idle CPU by adaptive meeting detection polling. (48b661c)<br/>
+- Keep Whisper downloads alive in the background and default audio retention to 24 hours. (1f5edf3)<br/>
+- Fix installed-model activation, browser mic latch, and leave auto-stop. (e0d4770)<br/>
+- Add first launch product tour (98abd15)</div>
+]]></description>
+      <enclosure
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.1/TrueMinutes-0.8.1.dmg"
+        length="24736891"
+        type="application/octet-stream"
+        sparkle:edSignature="l5Hd3zHd7n+bHhQ6qTsRHsry7UiBIf60fU2+XiaoWOvpM+j0pHGOjLx2v4pOMmlBWajKjuD9933aHtX/LAYkCg==" />
+    </item>
   </channel>
 </rss>
