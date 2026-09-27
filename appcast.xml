@@ -7,15 +7,16 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.8.1</title>
-      <pubDate>Sun, 27 Sep 2026 13:50:38 +0000</pubDate>
-      <sparkle:version>202609271313</sparkle:version>
+      <pubDate>Sun, 27 Sep 2026 13:58:09 +0000</pubDate>
+      <sparkle:version>202609271314</sparkle:version>
       <sparkle:shortVersionString>0.8.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<div>TrueMinutes 0.8.1 (build 202609271313)<br/>
+<div>TrueMinutes 0.8.1 (build 202609271314)<br/>
 <br/><br/>
 Changes included in this automatic main release:<br/>
 <br/><br/>
+- Bump GitHub Actions to Node 24 (c3efe94)<br/>
 - Authenticate release feed push (b9c65b1)<br/>
 - Normalize Sparkle signing key for CI (a26fea8)<br/>
 - Allow internal signing identity in CI (c954021)<br/>
@@ -34,14 +35,13 @@ Changes included in this automatic main release:<br/>
 - Drive meeting detection from AXObserver events. (6343f69)<br/>
 - Cut idle CPU by adaptive meeting detection polling. (48b661c)<br/>
 - Keep Whisper downloads alive in the background and default audio retention to 24 hours. (1f5edf3)<br/>
-- Fix installed-model activation, browser mic latch, and leave auto-stop. (e0d4770)<br/>
-- Add first launch product tour (98abd15)</div>
+- Fix installed-model activation, browser mic latch, and leave auto-stop. (e0d4770)</div>
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.1/TrueMinutes-0.8.1.dmg"
-        length="24736891"
+        length="24736910"
         type="application/octet-stream"
-        sparkle:edSignature="l5Hd3zHd7n+bHhQ6qTsRHsry7UiBIf60fU2+XiaoWOvpM+j0pHGOjLx2v4pOMmlBWajKjuD9933aHtX/LAYkCg==" />
+        sparkle:edSignature="hETvhG1Probnor6EuiP/DuQWt81f9AlLbNIwwHfqRgjQsPlnY9MM3CDkjbLwg3QkS3xyWGWWkgKAYthrGpMECw==" />
     </item>
   </channel>
 </rss>
