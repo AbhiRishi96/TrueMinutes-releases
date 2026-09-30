@@ -2,21 +2,20 @@
 
 All notable changes to TrueMinutes releases.
 
-## [0.8.1] — 2026-09-27
+## [0.8.11] — 2026-09-30
 
-This update focuses on making meeting recording stop and microphone-follow behavior more reliable across Google Meet, Microsoft Teams, and Slack Calls.
+### New
+- **First-time setup is now focused and guided** — New users start with a short setup flow for local AI models and permissions instead of the old product tour.
+- **Recommended local models can download in the background** — You can continue setup and use TrueMinutes while transcription and summary models are prepared.
+- **Permissions are easier to review** — Microphone, system audio, Accessibility, Calendar, and browser integrations now appear as compact cards with clear status and next steps.
+
+### Improved
+- **Fewer surprise permission prompts** — TrueMinutes now asks for access from setup, Settings, or a feature action instead of prompting automatically on ordinary launch.
+- **More reliable recording during screen sharing** — Meet, Teams, Zoom, Webex, and Slack calls are less likely to stop just because a share picker or temporary call window appears.
+- **Clearer meeting cleanup** — Recent recordings and meeting details recover more gracefully when transcript, summary, or stop processing finishes after the main capture ends.
 
 ### Fixed
-- **Google Meet recordings stop after you leave** — TrueMinutes no longer keeps recording just because the browser still has residual audio activity after a Meet call ends.
-- **Google Meet microphone follow is safer** — the local microphone now stays off when mute state is missing, stale, ambiguous, or no longer tied to an active call.
-- **Microsoft Teams screen share stability** — recording is retained through brief Accessibility blackouts during Teams screen sharing, VDI sessions, tab/window switches, and extended-display transitions.
-- **Slack Calls mute sync** — Slack mute/unmute state is detected across sibling call windows so local microphone capture follows the actual call controls more accurately.
-- **Release/update reliability** — Sparkle update publishing now builds, signs, uploads the DMG, and updates the public appcast from CI.
-
-### Notes
-- This build is internally signed, not Apple notarized. If macOS blocks first launch, use the install instructions included in the DMG.
-
----
+- **Finished re-transcriptions no longer leave stale text on screen** — Meeting detail now refreshes after a successful re-transcription instead of continuing to show older polished paragraphs.
 
 ## [0.9.8] — 2026-09-01
 

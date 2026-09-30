@@ -6,33 +6,32 @@
     <description>TrueMinutes update feed</description>
     <language>en</language>
     <item>
-      <title>TrueMinutes 0.8.1</title>
-      <pubDate>Sun, 27 Sep 2026 14:05:58 +0000</pubDate>
-      <sparkle:version>202609271415</sparkle:version>
-      <sparkle:shortVersionString>0.8.1</sparkle:shortVersionString>
+      <title>TrueMinutes 0.8.11</title>
+      <pubDate>Wed, 30 Sep 2026 18:13:13 +0000</pubDate>
+      <sparkle:version>202609301823</sparkle:version>
+      <sparkle:shortVersionString>0.8.11</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<div>TrueMinutes 0.8.1 (build 202609271415)<br/>
+<div>TrueMinutes 0.8.11 (build 202609301823)<br/>
 <br/><br/>
-This update focuses on making meeting recording stop and microphone-follow behavior more reliable across Google Meet, Microsoft Teams, and Slack Calls.<br/>
+### New<br/>
+- **First-time setup is now focused and guided** — New users start with a short setup flow for local AI models and permissions instead of the old product tour.<br/>
+- **Recommended local models can download in the background** — You can continue setup and use TrueMinutes while transcription and summary models are prepared.<br/>
+- **Permissions are easier to review** — Microphone, system audio, Accessibility, Calendar, and browser integrations now appear as compact cards with clear status and next steps.<br/>
+<br/><br/>
+### Improved<br/>
+- **Fewer surprise permission prompts** — TrueMinutes now asks for access from setup, Settings, or a feature action instead of prompting automatically on ordinary launch.<br/>
+- **More reliable recording during screen sharing** — Meet, Teams, Zoom, Webex, and Slack calls are less likely to stop just because a share picker or temporary call window appears.<br/>
+- **Clearer meeting cleanup** — Recent recordings and meeting details recover more gracefully when transcript, summary, or stop processing finishes after the main capture ends.<br/>
 <br/><br/>
 ### Fixed<br/>
-- **Google Meet recordings stop after you leave** — TrueMinutes no longer keeps recording just because the browser still has residual audio activity after a Meet call ends.<br/>
-- **Google Meet microphone follow is safer** — the local microphone now stays off when mute state is missing, stale, ambiguous, or no longer tied to an active call.<br/>
-- **Microsoft Teams screen share stability** — recording is retained through brief Accessibility blackouts during Teams screen sharing, VDI sessions, tab/window switches, and extended-display transitions.<br/>
-- **Slack Calls mute sync** — Slack mute/unmute state is detected across sibling call windows so local microphone capture follows the actual call controls more accurately.<br/>
-- **Release/update reliability** — Sparkle update publishing now builds, signs, uploads the DMG, and updates the public appcast from CI.<br/>
-<br/><br/>
-### Notes<br/>
-- This build is internally signed, not Apple notarized. If macOS blocks first launch, use the install instructions included in the DMG.<br/>
-<br/><br/>
----</div>
+- **Finished re-transcriptions no longer leave stale text on screen** — Meeting detail now refreshes after a successful re-transcription instead of continuing to show older polished paragraphs.</div>
 ]]></description>
       <enclosure
-        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.1/TrueMinutes-0.8.1.dmg"
-        length="24736867"
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.11/TrueMinutes-0.8.11.dmg"
+        length="25032973"
         type="application/octet-stream"
-        sparkle:edSignature="rK9q8VcsaJjfIe2RsDjetXO1noMn16N3Nky6z721dLAcITiJ98kwdYXIrom/UkL3vibl1HyAA56Jovrp0/QxBQ==" />
+        sparkle:edSignature="QRdIDHT9DVotVKWDa9T50boXNCoMAHD1GoNG27GMjM5OyTEAqdhq0wuWVhMz0QcUl6Cw0rMwIWp+Z7dUGeQWBg==" />
     </item>
   </channel>
 </rss>
