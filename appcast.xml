@@ -6,32 +6,37 @@
     <description>TrueMinutes update feed</description>
     <language>en</language>
     <item>
-      <title>TrueMinutes 0.8.11</title>
-      <pubDate>Wed, 30 Sep 2026 18:13:13 +0000</pubDate>
-      <sparkle:version>202609301823</sparkle:version>
-      <sparkle:shortVersionString>0.8.11</sparkle:shortVersionString>
+      <title>TrueMinutes 0.8.2</title>
+      <pubDate>Fri, 02 Oct 2026 15:53:56 +0000</pubDate>
+      <sparkle:version>202610021525</sparkle:version>
+      <sparkle:shortVersionString>0.8.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<div>TrueMinutes 0.8.11 (build 202609301823)<br/>
+<div>TrueMinutes 0.8.2 (build 202610021525)<br/>
 <br/><br/>
 ### New<br/>
+- **Ask TrueMinutes is now conversational** — Ask follow-up questions about a meeting transcript, summary, decisions, and action items from the meeting detail view.<br/>
 - **First-time setup is now focused and guided** — New users start with a short setup flow for local AI models and permissions instead of the old product tour.<br/>
 - **Recommended local models can download in the background** — You can continue setup and use TrueMinutes while transcription and summary models are prepared.<br/>
 - **Permissions are easier to review** — Microphone, system audio, Accessibility, Calendar, and browser integrations now appear as compact cards with clear status and next steps.<br/>
 <br/><br/>
 ### Improved<br/>
+- **Meeting answers use better local context** — Ask TrueMinutes retrieves transcript and summary snippets more carefully before generating an answer.<br/>
 - **Fewer surprise permission prompts** — TrueMinutes now asks for access from setup, Settings, or a feature action instead of prompting automatically on ordinary launch.<br/>
 - **More reliable recording during screen sharing** — Meet, Teams, Zoom, Webex, and Slack calls are less likely to stop just because a share picker or temporary call window appears.<br/>
 - **Clearer meeting cleanup** — Recent recordings and meeting details recover more gracefully when transcript, summary, or stop processing finishes after the main capture ends.<br/>
 <br/><br/>
 ### Fixed<br/>
-- **Finished re-transcriptions no longer leave stale text on screen** — Meeting detail now refreshes after a successful re-transcription instead of continuing to show older polished paragraphs.</div>
+- **Ask answers parse more reliably** — JSON decoding and query parsing are more tolerant of model output variation.<br/>
+- **Finished re-transcriptions no longer leave stale text on screen** — Meeting detail now refreshes after a successful re-transcription instead of continuing to show older polished paragraphs.<br/>
+<br/><br/>
+---</div>
 ]]></description>
       <enclosure
-        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.11/TrueMinutes-0.8.11.dmg"
-        length="25032973"
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.2/TrueMinutes-0.8.2.dmg"
+        length="25243809"
         type="application/octet-stream"
-        sparkle:edSignature="QRdIDHT9DVotVKWDa9T50boXNCoMAHD1GoNG27GMjM5OyTEAqdhq0wuWVhMz0QcUl6Cw0rMwIWp+Z7dUGeQWBg==" />
+        sparkle:edSignature="2rjxYhPtlkGd90q3+5kX0HEBT6uWl5LoAhxGQDCwvqroDflPtdMAoV/LLt/JgitGqBehwuyKqstFr73zXf9cBQ==" />
     </item>
   </channel>
 </rss>
