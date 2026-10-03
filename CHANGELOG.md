@@ -2,6 +2,19 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.8.3] — 2026-10-03
+
+### New
+- Encrypted Google Drive sync for meetings, transcripts, summaries, Ask chats, folders, and automation rules across Macs using the same Google account. Audio files stay on this Mac.
+
+### Fixed
+- Older remote snapshots and deletes cannot overwrite newer synced content.
+- Drive sync completes the full listing, including libraries spanning more than twenty pages.
+- Historical content is uploaded on first connection; interrupted uploads resume from the durable outbox.
+- Sync progress and remote changes refresh in the app. Unexpected bulk remote deletes pause for review.
+
+---
+
 ## [0.8.2] — 2026-10-02
 
 ### New
