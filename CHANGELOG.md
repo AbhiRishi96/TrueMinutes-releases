@@ -8,6 +8,7 @@ All notable changes to TrueMinutes releases.
 - Encrypted Google Drive sync for meetings, transcripts, summaries, Ask chats, folders, and automation rules across Macs using the same Google account. Audio files stay on this Mac.
 
 ### Fixed
+- Google Calendar and Drive connections retain their tokens across app relaunch; Keychain saves are verified before reporting a successful connection.
 - Older remote snapshots and deletes cannot overwrite newer synced content.
 - Drive sync completes the full listing, including libraries spanning more than twenty pages.
 - Historical content is uploaded on first connection; interrupted uploads resume from the durable outbox.

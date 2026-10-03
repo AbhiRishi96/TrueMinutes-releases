@@ -7,17 +7,18 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.8.3</title>
-      <pubDate>Sat, 03 Oct 2026 07:55:54 +0000</pubDate>
-      <sparkle:version>202610030727</sparkle:version>
+      <pubDate>Sat, 03 Oct 2026 08:27:19 +0000</pubDate>
+      <sparkle:version>202610030828</sparkle:version>
       <sparkle:shortVersionString>0.8.3</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<div>TrueMinutes 0.8.3 (build 202610030727)<br/>
+<div>TrueMinutes 0.8.3 (build 202610030828)<br/>
 <br/><br/>
 ### New<br/>
 - Encrypted Google Drive sync for meetings, transcripts, summaries, Ask chats, folders, and automation rules across Macs using the same Google account. Audio files stay on this Mac.<br/>
 <br/><br/>
 ### Fixed<br/>
+- Google Calendar and Drive connections retain their tokens across app relaunch; Keychain saves are verified before reporting a successful connection.<br/>
 - Older remote snapshots and deletes cannot overwrite newer synced content.<br/>
 - Drive sync completes the full listing, including libraries spanning more than twenty pages.<br/>
 - Historical content is uploaded on first connection; interrupted uploads resume from the durable outbox.<br/>
@@ -27,9 +28,9 @@
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.3/TrueMinutes-0.8.3.dmg"
-        length="25657884"
+        length="25672759"
         type="application/octet-stream"
-        sparkle:edSignature="1MnUwkS70bgh4CNWxfvcLZV6sZ5T/B+0knncWzdmI8wFCO2AnT91CvRANUY+Os23fu18p9dI/JADoaeEOjQYAA==" />
+        sparkle:edSignature="mAD0KC8mV0AIXAsP2L2NJJYe9DMdjVW3ElQiHuFET2wGc0+DDfHYbB9AceBQUujJyQQF0ImA0wAPdxJF1slXDA==" />
     </item>
   </channel>
 </rss>
