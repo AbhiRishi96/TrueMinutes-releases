@@ -2,6 +2,17 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.8.4] — 2026-10-04
+
+### Fixed
+- Google Calendar and Drive sign-in use a secure OAuth service; the Google client secret is no longer bundled in the app.
+- Google token refresh preserves saved sessions and protects sign-out and account changes from late refresh results.
+- Existing Google connections need one reconnect to migrate to the new sign-in service. Local meetings and encrypted vault data are preserved.
+
+### Changed
+- Google connections offer separate sign-out and revoke-access actions.
+- Release packages are checked for bundled credentials before publishing.
+
 ## [0.8.3] — 2026-10-03
 
 ### New
