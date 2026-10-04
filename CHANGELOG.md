@@ -2,6 +2,35 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.8.6] — 2026-10-05
+
+### New
+- **Calendar day, week, and month views** with account colors, event details, upcoming countdowns, and Join controls.
+- **Home shortcuts** for open action items, recent meetings with processing status, and chats with message previews.
+- **Optional Google Calendar connection during setup**, with connection status and a Skip for now action.
+- **Custom database row notes** accessible from the Notes workspace.
+
+### Improved
+- **Meeting review** has responsive action buttons and audio controls, clearer transcript bubbles, summary previews, and source labels.
+- **Library search** covers titles, notes, and transcripts, supports Command-F, and preserves archive and folder scope as results refresh.
+- **Notes pages and databases** adapt to narrow windows, filter immediately, restore results when filters clear, and show loading and saving errors.
+- **Summary editing** preserves unsaved drafts and reports save failures without closing the editor.
+- **Home and sidebar navigation** retain the original scrolling sidebar and remove layout crossfades; chat dates and singular counts are corrected.
+- **Privacy and setup** use consistent cards, clearer Google connection states, and isolated keyboard focus.
+- **Floating meeting prompts** receive first-click and keyboard input and expose compact Transcribe and dismiss controls.
+- **Menu panel** shows all meeting opportunities and distinguishes verified calls from calendar events awaiting a verified join.
+
+### Fixed
+- **Menu dropdown over fullscreen apps** uses a nonactivating panel that opens in the foreground Space without activating the main window.
+- **Release notes formatting** renders headings, bold text, and lists in the update window; GitHub releases include the full feature changelog.
+- **Final audio transcription** improves recovery of trailing audio and transcript coverage during offline re-transcription.
+- **Saved Google credentials** handle Keychain access failures explicitly and preserve usable connection state.
+- **Workspace navigation and empty states** refresh selected views, expose row actions, and report failures clearly.
+
+### Notes
+- Meeting leave detection, screen-share retention, and recording cutoff behavior are unchanged.
+- This update uses the existing internal signing channel and is not Apple notarized.
+
 ## [0.8.5] — 2026-10-04
 
 ### Improved
