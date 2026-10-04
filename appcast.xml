@@ -6,28 +6,36 @@
     <description>TrueMinutes update feed</description>
     <language>en</language>
     <item>
-      <title>TrueMinutes 0.8.4</title>
-      <pubDate>Sat, 03 Oct 2026 20:43:22 +0000</pubDate>
-      <sparkle:version>202610032029</sparkle:version>
-      <sparkle:shortVersionString>0.8.4</sparkle:shortVersionString>
+      <title>TrueMinutes 0.8.5</title>
+      <pubDate>Sun, 04 Oct 2026 06:33:51 +0000</pubDate>
+      <sparkle:version>202610040630</sparkle:version>
+      <sparkle:shortVersionString>0.8.5</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<div>TrueMinutes 0.8.4 (build 202610032029)<br/>
+<div>TrueMinutes 0.8.5 (build 202610040630)<br/>
+<br/><br/>
+### Improved<br/>
+- Ask TrueMinutes composes on-device explanations and compares discussed options using cited meeting evidence, with facts separated from interpretation and recommendations.<br/>
+- Follow-up questions retain meeting scope and date context; reasoning questions include more of the surrounding discussion so later alternatives are less likely to be missed.<br/>
+- Answers and native tables, task lists, and charts receive citation validation and a separate evidence review before appearing in chat.<br/>
+- Ask requests can be stopped, with more reliable cancellation and clearer generation errors.<br/>
 <br/><br/>
 ### Fixed<br/>
-- Google Calendar and Drive sign-in use a secure OAuth service; the Google client secret is no longer bundled in the app.<br/>
-- Google token refresh preserves saved sessions and protects sign-out and account changes from late refresh results.<br/>
-- Existing Google connections need one reconnect to migrate to the new sign-in service. Local meetings and encrypted vault data are preserved.<br/>
+- Fixed a local-model capability check that prevented Ask generation and displayed transcript excerpts instead of a composed answer. Failed generation now reports an error rather than saving a misleading fallback answer.<br/>
+- Question phrases such as “and what options” no longer become unintended person filters.<br/>
+- Extractive “Qwen not run” notes are excluded from answer evidence.<br/>
+- A completed inference request no longer disconnects a healthy helper when its old timeout fires.<br/>
+- Startup Keychain migration checks existing items without decrypting credentials or presenting authentication prompts.<br/>
 <br/><br/>
-### Changed<br/>
-- Google connections offer separate sign-out and revoke-access actions.<br/>
-- Release packages are checked for bundled credentials before publishing.</div>
+### Notes<br/>
+- Ask processing remains local. Evidence review improves grounding but does not guarantee correctness; larger meeting contexts can still take over a minute to answer.<br/>
+- This update uses the existing internal signing channel and is not Apple notarized.</div>
 ]]></description>
       <enclosure
-        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.4/TrueMinutes-0.8.4.dmg"
-        length="25791643"
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.5/TrueMinutes-0.8.5.dmg"
+        length="25900257"
         type="application/octet-stream"
-        sparkle:edSignature="/5qL2wX6Jsmvz3eY8Shmr4MLmoHtJjg0vz116POzJcbRzvc2IrRUYFMOG+rpsupVONNqGEXqCLhkz13HWBVuCA==" />
+        sparkle:edSignature="JAoXk4pPw5yjaJjeiV3lRjbUNuW+r6T/QpwUjs0zz8dJwe9yGxFlywjXPNP7KobNAWrawZ+E8XurL6w4/0TFCw==" />
     </item>
   </channel>
 </rss>

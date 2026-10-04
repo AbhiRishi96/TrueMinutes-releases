@@ -2,6 +2,25 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.8.5] — 2026-10-04
+
+### Improved
+- Ask TrueMinutes composes on-device explanations and compares discussed options using cited meeting evidence, with facts separated from interpretation and recommendations.
+- Follow-up questions retain meeting scope and date context; reasoning questions include more of the surrounding discussion so later alternatives are less likely to be missed.
+- Answers and native tables, task lists, and charts receive citation validation and a separate evidence review before appearing in chat.
+- Ask requests can be stopped, with more reliable cancellation and clearer generation errors.
+
+### Fixed
+- Fixed a local-model capability check that prevented Ask generation and displayed transcript excerpts instead of a composed answer. Failed generation now reports an error rather than saving a misleading fallback answer.
+- Question phrases such as “and what options” no longer become unintended person filters.
+- Extractive “Qwen not run” notes are excluded from answer evidence.
+- A completed inference request no longer disconnects a healthy helper when its old timeout fires.
+- Startup Keychain migration checks existing items without decrypting credentials or presenting authentication prompts.
+
+### Notes
+- Ask processing remains local. Evidence review improves grounding but does not guarantee correctness; larger meeting contexts can still take over a minute to answer.
+- This update uses the existing internal signing channel and is not Apple notarized.
+
 ## [0.8.4] — 2026-10-04
 
 ### Fixed
