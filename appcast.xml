@@ -6,41 +6,19 @@
     <description>TrueMinutes update feed</description>
     <language>en</language>
     <item>
-      <title>TrueMinutes 0.8.6</title>
-      <pubDate>Mon, 05 Oct 2026 04:22:24 +0000</pubDate>
-      <sparkle:version>202610050433</sparkle:version>
-      <sparkle:shortVersionString>0.8.6</sparkle:shortVersionString>
+      <title>TrueMinutes 0.8.7</title>
+      <pubDate>Mon, 05 Oct 2026 10:11:06 +0000</pubDate>
+      <sparkle:version>202610051035</sparkle:version>
+      <sparkle:shortVersionString>0.8.7</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.8.6 (build 202610050433)</p>
-<h3>New</h3>
-<ul>
-<li><strong>Calendar day, week, and month views</strong> with account colors, event details, upcoming countdowns, and Join controls.</li>
-<li><strong>Home shortcuts</strong> for open action items, recent meetings with processing status, and chats with message previews.</li>
-<li><strong>Optional Google Calendar connection during setup</strong>, with connection status and a Skip for now action.</li>
-<li><strong>Custom database row notes</strong> accessible from the Notes workspace.</li>
-</ul>
+<p>TrueMinutes 0.8.7 (build 202610051035)</p>
 <h3>Improved</h3>
 <ul>
-<li><strong>Meeting review</strong> has responsive action buttons and audio controls, clearer transcript bubbles, summary previews, and source labels.</li>
-<li><strong>Library search</strong> covers titles, notes, and transcripts, supports Command-F, and preserves archive and folder scope as results refresh.</li>
-<li><strong>Notes pages and databases</strong> adapt to narrow windows, filter immediately, restore results when filters clear, and show loading and saving errors.</li>
-<li><strong>Summary editing</strong> preserves unsaved drafts and reports save failures without closing the editor.</li>
-<li><strong>Home and sidebar navigation</strong> retain the original scrolling sidebar and remove layout crossfades; chat dates and singular counts are corrected.</li>
-<li><strong>Privacy and setup</strong> use consistent cards, clearer Google connection states, and isolated keyboard focus.</li>
-<li><strong>Floating meeting prompts</strong> receive first-click and keyboard input and expose compact Transcribe and dismiss controls.</li>
-<li><strong>Menu panel</strong> shows all meeting opportunities and distinguishes verified calls from calendar events awaiting a verified join.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li><strong>Recording-start confirmation recovery</strong> shows browser-audio consent in the main window and menu, uses the current pending session for confirmation, and clearly labels the pending decision instead of appearing stuck in detection.</li>
-<li><strong>Meeting overlay consistency</strong> applies shared fullscreen/Space window configuration to the meeting prompt, browser confirmation, recording pill, and menu panel.</li>
-<li><strong>Native title-bar layout</strong> leaves scene geometry under SwiftUI ownership to avoid conflicting AppKit layout overrides.</li>
-<li><strong>Menu dropdown over fullscreen apps</strong> uses a nonactivating panel that opens in the foreground Space without activating the main window.</li>
-<li><strong>Release notes formatting</strong> renders headings, bold text, and lists in the update window; GitHub releases include the full feature changelog.</li>
-<li><strong>Final audio transcription</strong> improves recovery of trailing audio and transcript coverage during offline re-transcription.</li>
-<li><strong>Saved Google credentials</strong> handle Keychain access failures explicitly and preserve usable connection state.</li>
-<li><strong>Workspace navigation and empty states</strong> refresh selected views, expose row actions, and report failures clearly.</li>
+<li><strong>Join island</strong> drops from the camera as a water drop and settles into a compact 240×40 pill, with the dismiss control on the rim.</li>
+<li><strong>Calendar pre-join</strong> uses the same island size and motion, with a starting-soon countdown that does not hide the later live-join island.</li>
+<li><strong>Recording pill</strong> grows from a center hole into the vertical compact pill (including a standard mic control) and the smaller Mic/Stop card, then collapses back into that hole when capture ends.</li>
+<li><strong>Overlay policy</strong> keeps the island and recording pill visible over fullscreen meeting Spaces without collapsing the recording chrome.</li>
 </ul>
 <h3>Notes</h3>
 <ul>
@@ -49,10 +27,10 @@
 </ul>
 ]]></description>
       <enclosure
-        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.6/TrueMinutes-0.8.6.dmg"
-        length="26390480"
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.7/TrueMinutes-0.8.7.dmg"
+        length="26483942"
         type="application/octet-stream"
-        sparkle:edSignature="0hX81XPxR0OGSrPIYxDFB7aPN1TD9DczKRSb6CqXGQZzvQwpbr16xkGuQfm4dmIChbjXXQbZ+UhIvIOgX3L4Cw==" />
+        sparkle:edSignature="PFHDyv0kskqPI/IILkW7h/RtVm4FshsWXzESXCRcPTO72pp/2GcxGspHyK/jas62PVwDViFGMh0SUM23vpxDDg==" />
     </item>
   </channel>
 </rss>

@@ -2,6 +2,18 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.8.7] — 2026-10-05
+
+### Improved
+- **Join island** drops from the camera as a water drop and settles into a compact 240×40 pill, with the dismiss control on the rim.
+- **Calendar pre-join** uses the same island size and motion, with a starting-soon countdown that does not hide the later live-join island.
+- **Recording pill** grows from a center hole into the vertical compact pill (including a standard mic control) and the smaller Mic/Stop card, then collapses back into that hole when capture ends.
+- **Overlay policy** keeps the island and recording pill visible over fullscreen meeting Spaces without collapsing the recording chrome.
+
+### Notes
+- Meeting leave detection, screen-share retention, and recording cutoff behavior are unchanged.
+- This update uses the existing internal signing channel and is not Apple notarized.
+
 ## [0.8.6] — 2026-10-05
 
 ### New
