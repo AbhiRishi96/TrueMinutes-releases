@@ -2,6 +2,17 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.8.8] — 2026-10-05
+
+### Fixed
+- **Speaker-off meeting capture** uses a Core Audio process tap for native Teams/Zoom and, after the usual per-meeting confirm, for browser Meet/Teams/Zoom, so remote audio is still recorded when Mac speakers are muted or off.
+- **Menu bar panel** sizes to its actions instead of collapsing to a header-only strip, so Open, export, recent meetings, Settings, and Quit stay usable.
+
+### Notes
+- Browser capture still requires explicit confirmation for that meeting and may include other tabs from the same browser.
+- Meeting leave detection, screen-share retention, recording cutoff, and pill chrome are unchanged.
+- This update uses the existing internal signing channel and is not Apple notarized.
+
 ## [0.8.7] — 2026-10-05
 
 ### Improved

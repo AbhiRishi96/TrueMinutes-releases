@@ -6,31 +6,30 @@
     <description>TrueMinutes update feed</description>
     <language>en</language>
     <item>
-      <title>TrueMinutes 0.8.7</title>
-      <pubDate>Mon, 05 Oct 2026 10:11:06 +0000</pubDate>
-      <sparkle:version>202610051035</sparkle:version>
-      <sparkle:shortVersionString>0.8.7</sparkle:shortVersionString>
+      <title>TrueMinutes 0.8.8</title>
+      <pubDate>Mon, 05 Oct 2026 11:41:02 +0000</pubDate>
+      <sparkle:version>202610051136</sparkle:version>
+      <sparkle:shortVersionString>0.8.8</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.8.7 (build 202610051035)</p>
-<h3>Improved</h3>
+<p>TrueMinutes 0.8.8 (build 202610051136)</p>
+<h3>Fixed</h3>
 <ul>
-<li><strong>Join island</strong> drops from the camera as a water drop and settles into a compact 240×40 pill, with the dismiss control on the rim.</li>
-<li><strong>Calendar pre-join</strong> uses the same island size and motion, with a starting-soon countdown that does not hide the later live-join island.</li>
-<li><strong>Recording pill</strong> grows from a center hole into the vertical compact pill (including a standard mic control) and the smaller Mic/Stop card, then collapses back into that hole when capture ends.</li>
-<li><strong>Overlay policy</strong> keeps the island and recording pill visible over fullscreen meeting Spaces without collapsing the recording chrome.</li>
+<li><strong>Speaker-off meeting capture</strong> uses a Core Audio process tap for native Teams/Zoom and, after the usual per-meeting confirm, for browser Meet/Teams/Zoom, so remote audio is still recorded when Mac speakers are muted or off.</li>
+<li><strong>Menu bar panel</strong> sizes to its actions instead of collapsing to a header-only strip, so Open, export, recent meetings, Settings, and Quit stay usable.</li>
 </ul>
 <h3>Notes</h3>
 <ul>
-<li>Meeting leave detection, screen-share retention, and recording cutoff behavior are unchanged.</li>
+<li>Browser capture still requires explicit confirmation for that meeting and may include other tabs from the same browser.</li>
+<li>Meeting leave detection, screen-share retention, recording cutoff, and pill chrome are unchanged.</li>
 <li>This update uses the existing internal signing channel and is not Apple notarized.</li>
 </ul>
 ]]></description>
       <enclosure
-        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.7/TrueMinutes-0.8.7.dmg"
-        length="26483942"
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.8/TrueMinutes-0.8.8.dmg"
+        length="26482801"
         type="application/octet-stream"
-        sparkle:edSignature="PFHDyv0kskqPI/IILkW7h/RtVm4FshsWXzESXCRcPTO72pp/2GcxGspHyK/jas62PVwDViFGMh0SUM23vpxDDg==" />
+        sparkle:edSignature="Y1PqEdh364KxCBmbi11fkRzcnl5ogbo/kyrWwVnrNQIAsMQeC+8Z1XoZ5I889FKTuB1no079BWSr8fo60t/pDw==" />
     </item>
   </channel>
 </rss>
