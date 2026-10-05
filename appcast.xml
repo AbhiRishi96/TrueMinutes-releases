@@ -7,16 +7,17 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.8.8</title>
-      <pubDate>Mon, 05 Oct 2026 11:41:02 +0000</pubDate>
-      <sparkle:version>202610051136</sparkle:version>
+      <pubDate>Mon, 05 Oct 2026 12:06:14 +0000</pubDate>
+      <sparkle:version>202610051237</sparkle:version>
       <sparkle:shortVersionString>0.8.8</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.8.8 (build 202610051136)</p>
+<p>TrueMinutes 0.8.8 (build 202610051237)</p>
 <h3>Fixed</h3>
 <ul>
 <li><strong>Speaker-off meeting capture</strong> uses a Core Audio process tap for native Teams/Zoom and, after the usual per-meeting confirm, for browser Meet/Teams/Zoom, so remote audio is still recorded when Mac speakers are muted or off.</li>
 <li><strong>Menu bar panel</strong> sizes to its actions instead of collapsing to a header-only strip, so Open, export, recent meetings, Settings, and Quit stay usable.</li>
+<li><strong>Teams Accessibility scan</strong> no longer crashes the app when a meeting UI node is released while TrueMinutes is reading controls.</li>
 </ul>
 <h3>Notes</h3>
 <ul>
@@ -27,9 +28,9 @@
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.8/TrueMinutes-0.8.8.dmg"
-        length="26482801"
+        length="26486278"
         type="application/octet-stream"
-        sparkle:edSignature="Y1PqEdh364KxCBmbi11fkRzcnl5ogbo/kyrWwVnrNQIAsMQeC+8Z1XoZ5I889FKTuB1no079BWSr8fo60t/pDw==" />
+        sparkle:edSignature="1OZ9FYVvXViV3uMnQgRKVaIYHE7rx1rY+UN8vDfaP/5KPJ7ybRTJGk3g0XLizjkcAg68tWi4zCiMV3CDKSEOBQ==" />
     </item>
   </channel>
 </rss>

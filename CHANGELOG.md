@@ -7,6 +7,7 @@ All notable changes to TrueMinutes releases.
 ### Fixed
 - **Speaker-off meeting capture** uses a Core Audio process tap for native Teams/Zoom and, after the usual per-meeting confirm, for browser Meet/Teams/Zoom, so remote audio is still recorded when Mac speakers are muted or off.
 - **Menu bar panel** sizes to its actions instead of collapsing to a header-only strip, so Open, export, recent meetings, Settings, and Quit stay usable.
+- **Teams Accessibility scan** no longer crashes the app when a meeting UI node is released while TrueMinutes is reading controls.
 
 ### Notes
 - Browser capture still requires explicit confirmation for that meeting and may include other tabs from the same browser.
