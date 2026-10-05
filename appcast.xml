@@ -7,12 +7,12 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.8.6</title>
-      <pubDate>Sun, 04 Oct 2026 18:46:13 +0000</pubDate>
-      <sparkle:version>202610041831</sparkle:version>
+      <pubDate>Mon, 05 Oct 2026 03:51:17 +0000</pubDate>
+      <sparkle:version>202610050332</sparkle:version>
       <sparkle:shortVersionString>0.8.6</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.8.6 (build 202610041831)</p>
+<p>TrueMinutes 0.8.6 (build 202610050332)</p>
 <h3>New</h3>
 <ul>
 <li><strong>Calendar day, week, and month views</strong> with account colors, event details, upcoming countdowns, and Join controls.</li>
@@ -33,6 +33,9 @@
 </ul>
 <h3>Fixed</h3>
 <ul>
+<li><strong>Recording-start confirmation recovery</strong> shows browser-audio consent in the main window and menu, uses the current pending session for confirmation, and clearly labels the pending decision instead of appearing stuck in detection.</li>
+<li><strong>Meeting overlay consistency</strong> applies shared fullscreen/Space window configuration to the meeting prompt, browser confirmation, recording pill, and menu panel.</li>
+<li><strong>Native title-bar layout</strong> leaves scene geometry under SwiftUI ownership to avoid conflicting AppKit layout overrides.</li>
 <li><strong>Menu dropdown over fullscreen apps</strong> uses a nonactivating panel that opens in the foreground Space without activating the main window.</li>
 <li><strong>Release notes formatting</strong> renders headings, bold text, and lists in the update window; GitHub releases include the full feature changelog.</li>
 <li><strong>Final audio transcription</strong> improves recovery of trailing audio and transcript coverage during offline re-transcription.</li>
@@ -47,9 +50,9 @@
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.6/TrueMinutes-0.8.6.dmg"
-        length="26384416"
+        length="26390461"
         type="application/octet-stream"
-        sparkle:edSignature="nPL4jr/dEoAnXhGkd5GsXi9fP/JFQON130ofokUMtamhxUDr4EqhM5J+r1bvh8TXcgv1+jaLlrnN7nuf0NvHDw==" />
+        sparkle:edSignature="Z/G15NSIEWxdaiQ54j6HDzIwe6ljg8LXaEnkrjLeA563Go2BWxuR5DL7FGUAwotQGw0HH+4G9cJ8S4tEu9BZCA==" />
     </item>
   </channel>
 </rss>

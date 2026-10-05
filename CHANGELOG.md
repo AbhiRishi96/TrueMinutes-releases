@@ -21,6 +21,9 @@ All notable changes to TrueMinutes releases.
 - **Menu panel** shows all meeting opportunities and distinguishes verified calls from calendar events awaiting a verified join.
 
 ### Fixed
+- **Recording-start confirmation recovery** shows browser-audio consent in the main window and menu, uses the current pending session for confirmation, and clearly labels the pending decision instead of appearing stuck in detection.
+- **Meeting overlay consistency** applies shared fullscreen/Space window configuration to the meeting prompt, browser confirmation, recording pill, and menu panel.
+- **Native title-bar layout** leaves scene geometry under SwiftUI ownership to avoid conflicting AppKit layout overrides.
 - **Menu dropdown over fullscreen apps** uses a nonactivating panel that opens in the foreground Space without activating the main window.
 - **Release notes formatting** renders headings, bold text, and lists in the update window; GitHub releases include the full feature changelog.
 - **Final audio transcription** improves recovery of trailing audio and transcript coverage during offline re-transcription.
