@@ -7,12 +7,12 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.8.6</title>
-      <pubDate>Mon, 05 Oct 2026 03:51:17 +0000</pubDate>
-      <sparkle:version>202610050332</sparkle:version>
+      <pubDate>Mon, 05 Oct 2026 04:22:24 +0000</pubDate>
+      <sparkle:version>202610050433</sparkle:version>
       <sparkle:shortVersionString>0.8.6</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.8.6 (build 202610050332)</p>
+<p>TrueMinutes 0.8.6 (build 202610050433)</p>
 <h3>New</h3>
 <ul>
 <li><strong>Calendar day, week, and month views</strong> with account colors, event details, upcoming countdowns, and Join controls.</li>
@@ -50,9 +50,9 @@
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.6/TrueMinutes-0.8.6.dmg"
-        length="26390461"
+        length="26390480"
         type="application/octet-stream"
-        sparkle:edSignature="Z/G15NSIEWxdaiQ54j6HDzIwe6ljg8LXaEnkrjLeA563Go2BWxuR5DL7FGUAwotQGw0HH+4G9cJ8S4tEu9BZCA==" />
+        sparkle:edSignature="0hX81XPxR0OGSrPIYxDFB7aPN1TD9DczKRSb6CqXGQZzvQwpbr16xkGuQfm4dmIChbjXXQbZ+UhIvIOgX3L4Cw==" />
     </item>
   </channel>
 </rss>
