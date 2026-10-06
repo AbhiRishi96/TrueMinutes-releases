@@ -2,6 +2,23 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.8.9] — 2026-10-06
+
+### Improved
+- Native titlebar and traffic lights stay visible, with green-button fullscreen toggling and Escape to exit fullscreen.
+- Meeting prompts and the recording pill follow fullscreen meeting Spaces and display the meeting app icon.
+- The recording waveform moves more smoothly and stays inside the compact pill.
+- Meeting audio capture prefers a built-in device clock when listening through USB, Bluetooth, or external outputs, and discovers browser/Electron audio helpers.
+
+### Fixed
+- Transient system-audio startup failures receive bounded retries; failed starts can be retried from the menu panel.
+- Recording hold uses sustained meeting-input inactivity as additional hang-up evidence, while retaining browser mute and Accessibility-blackout safeguards.
+- Green-button click interception is limited to the actual button and preserves modified clicks.
+
+### Notes
+- Browser capture still requires explicit confirmation for that meeting and may include other tabs from the same browser.
+- This update uses the existing internal signing channel and is not Apple notarized.
+
 ## [0.8.8] — 2026-10-05
 
 ### Improved

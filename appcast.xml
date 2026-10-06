@@ -6,39 +6,37 @@
     <description>TrueMinutes update feed</description>
     <language>en</language>
     <item>
-      <title>TrueMinutes 0.8.8</title>
-      <pubDate>Tue, 06 Oct 2026 04:16:23 +0000</pubDate>
-      <sparkle:version>202610060455</sparkle:version>
-      <sparkle:shortVersionString>0.8.8</sparkle:shortVersionString>
+      <title>TrueMinutes 0.8.9</title>
+      <pubDate>Tue, 06 Oct 2026 12:22:26 +0000</pubDate>
+      <sparkle:version>202610061257</sparkle:version>
+      <sparkle:shortVersionString>0.8.9</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.8.8 (build 202610060455)</p>
+<p>TrueMinutes 0.8.9 (build 202610061257)</p>
 <h3>Improved</h3>
 <ul>
-<li><strong>Join island</strong> is a 280×55 capsule with violet Transcribe, then a countdown chip, a one-line news-ticker headline, and a 5px full-width bottom bar that moves green → amber → red as the timer runs out. The teardrop drop / bounce intro is unchanged.</li>
-<li><strong>Live prompts</strong> keep a smooth 15s countdown; the timer chip turns amber at 10s and red at 5s. <strong>Calendar prompts</strong> show no timer and dismiss manually or one minute after the scheduled start.</li>
-<li><strong>Recording pill</strong> keeps the deployed compact→expanded morph; Mic uses a slash/color mute affordance with a fixed “Mic” label.</li>
-<li><strong>Keychain credentials</strong> load from one Data Protection vault item after the first migrate, so launch should present at most one Always Allow instead of a prompt per saved key.</li>
+<li>Native titlebar and traffic lights stay visible, with green-button fullscreen toggling and Escape to exit fullscreen.</li>
+<li>Meeting prompts and the recording pill follow fullscreen meeting Spaces and display the meeting app icon.</li>
+<li>The recording waveform moves more smoothly and stays inside the compact pill.</li>
+<li>Meeting audio capture prefers a built-in device clock when listening through USB, Bluetooth, or external outputs, and discovers browser/Electron audio helpers.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li><strong>Speaker-off meeting capture</strong> uses a Core Audio process tap for native Teams/Zoom and, after the usual per-meeting confirm, for browser Meet/Teams/Zoom, so remote audio is still recorded when Mac speakers are muted or off.</li>
-<li><strong>Menu bar panel</strong> sizes to its actions instead of collapsing to a header-only strip, so Open, export, recent meetings, Settings, and Quit stay usable.</li>
-<li><strong>Teams Accessibility scan</strong> no longer crashes the app when a meeting UI node is released while TrueMinutes is reading controls.</li>
-<li><strong>Internal signing pin</strong> follows the active TrueMinutes Internal leaf so local and CI builds verify against the same certificate.</li>
+<li>Transient system-audio startup failures receive bounded retries; failed starts can be retried from the menu panel.</li>
+<li>Recording hold uses sustained meeting-input inactivity as additional hang-up evidence, while retaining browser mute and Accessibility-blackout safeguards.</li>
+<li>Green-button click interception is limited to the actual button and preserves modified clicks.</li>
 </ul>
 <h3>Notes</h3>
 <ul>
 <li>Browser capture still requires explicit confirmation for that meeting and may include other tabs from the same browser.</li>
-<li>Meeting leave detection, screen-share retention, and recording cutoff behavior are unchanged.</li>
 <li>This update uses the existing internal signing channel and is not Apple notarized.</li>
 </ul>
 ]]></description>
       <enclosure
-        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.8/TrueMinutes-0.8.8.dmg"
-        length="27788216"
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.9/TrueMinutes-0.8.9.dmg"
+        length="27877045"
         type="application/octet-stream"
-        sparkle:edSignature="Cv9aj7wGQ9ktvKWgGdIyHhS1xpn8j54hL++pmGDu98i3HtfzxMaCPgQnkJdIHD6+FN9crqyFrB+4GWTe0KLTDg==" />
+        sparkle:edSignature="do3rIpIperXhdzi2+n04LasL5fDyfEJcnWZMctEUzE9jNzvKN84GU4xkQcGaxqX4aBHsp9maJYJXcRhz+ODyCA==" />
     </item>
   </channel>
 </rss>
