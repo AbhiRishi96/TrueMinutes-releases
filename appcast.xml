@@ -7,12 +7,12 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.8.8</title>
-      <pubDate>Tue, 06 Oct 2026 02:51:14 +0000</pubDate>
-      <sparkle:version>202610060253</sparkle:version>
+      <pubDate>Tue, 06 Oct 2026 02:56:07 +0000</pubDate>
+      <sparkle:version>202610060254</sparkle:version>
       <sparkle:shortVersionString>0.8.8</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.8.8 (build 202610060253)</p>
+<p>TrueMinutes 0.8.8 (build 202610060254)</p>
 <h3>Improved</h3>
 <ul>
 <li><strong>Join island</strong> is 280×60 with the app violet Transcribe control, a working in-panel chevron menu, and the existing teardrop drop / bounce intro.</li>
@@ -35,9 +35,9 @@
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.8/TrueMinutes-0.8.8.dmg"
-        length="27732005"
+        length="27732053"
         type="application/octet-stream"
-        sparkle:edSignature="HhD7crcVZ/xzj8ydmwEj1+EJJwqSqPl/bnmN718RcgbU5dUrDNnk54MtkYC/u1gyK/wHAqMLZTNwjgMhCBpUDQ==" />
+        sparkle:edSignature="W+EvmYHBGBs0PocmqBjEYEK0Sy3B99XJg6hN3WoSHs+K0mbMS+sf8CaQaqjLPUjnUHaKkxeZ1CDenbP3XxA/CA==" />
     </item>
   </channel>
 </rss>
