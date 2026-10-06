@@ -7,17 +7,18 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.8.8</title>
-      <pubDate>Tue, 06 Oct 2026 02:56:07 +0000</pubDate>
-      <sparkle:version>202610060254</sparkle:version>
+      <pubDate>Tue, 06 Oct 2026 04:16:23 +0000</pubDate>
+      <sparkle:version>202610060455</sparkle:version>
       <sparkle:shortVersionString>0.8.8</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.8.8 (build 202610060254)</p>
+<p>TrueMinutes 0.8.8 (build 202610060455)</p>
 <h3>Improved</h3>
 <ul>
-<li><strong>Join island</strong> is 280×60 with the app violet Transcribe control, a working in-panel chevron menu, and the existing teardrop drop / bounce intro.</li>
-<li><strong>Live prompts</strong> keep a smooth 15s countdown bar; <strong>calendar prompts</strong> show no timer and dismiss manually or one minute after the scheduled start.</li>
+<li><strong>Join island</strong> is a 280×55 capsule with violet Transcribe, then a countdown chip, a one-line news-ticker headline, and a 5px full-width bottom bar that moves green → amber → red as the timer runs out. The teardrop drop / bounce intro is unchanged.</li>
+<li><strong>Live prompts</strong> keep a smooth 15s countdown; the timer chip turns amber at 10s and red at 5s. <strong>Calendar prompts</strong> show no timer and dismiss manually or one minute after the scheduled start.</li>
 <li><strong>Recording pill</strong> keeps the deployed compact→expanded morph; Mic uses a slash/color mute affordance with a fixed “Mic” label.</li>
+<li><strong>Keychain credentials</strong> load from one Data Protection vault item after the first migrate, so launch should present at most one Always Allow instead of a prompt per saved key.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
@@ -35,9 +36,9 @@
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.8/TrueMinutes-0.8.8.dmg"
-        length="27732053"
+        length="27788216"
         type="application/octet-stream"
-        sparkle:edSignature="W+EvmYHBGBs0PocmqBjEYEK0Sy3B99XJg6hN3WoSHs+K0mbMS+sf8CaQaqjLPUjnUHaKkxeZ1CDenbP3XxA/CA==" />
+        sparkle:edSignature="Cv9aj7wGQ9ktvKWgGdIyHhS1xpn8j54hL++pmGDu98i3HtfzxMaCPgQnkJdIHD6+FN9crqyFrB+4GWTe0KLTDg==" />
     </item>
   </channel>
 </rss>

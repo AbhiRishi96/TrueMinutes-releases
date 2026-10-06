@@ -5,9 +5,10 @@ All notable changes to TrueMinutes releases.
 ## [0.8.8] — 2026-10-05
 
 ### Improved
-- **Join island** is 280×60 with the app violet Transcribe control, a working in-panel chevron menu, and the existing teardrop drop / bounce intro.
-- **Live prompts** keep a smooth 15s countdown bar; **calendar prompts** show no timer and dismiss manually or one minute after the scheduled start.
+- **Join island** is a 280×55 capsule with violet Transcribe, then a countdown chip, a one-line news-ticker headline, and a 5px full-width bottom bar that moves green → amber → red as the timer runs out. The teardrop drop / bounce intro is unchanged.
+- **Live prompts** keep a smooth 15s countdown; the timer chip turns amber at 10s and red at 5s. **Calendar prompts** show no timer and dismiss manually or one minute after the scheduled start.
 - **Recording pill** keeps the deployed compact→expanded morph; Mic uses a slash/color mute affordance with a fixed “Mic” label.
+- **Keychain credentials** load from one Data Protection vault item after the first migrate, so launch should present at most one Always Allow instead of a prompt per saved key.
 
 ### Fixed
 - **Speaker-off meeting capture** uses a Core Audio process tap for native Teams/Zoom and, after the usual per-meeting confirm, for browser Meet/Teams/Zoom, so remote audio is still recorded when Mac speakers are muted or off.
