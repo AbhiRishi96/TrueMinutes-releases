@@ -4,14 +4,20 @@ All notable changes to TrueMinutes releases.
 
 ## [0.8.8] — 2026-10-05
 
+### Improved
+- **Join island** is 280×60 with the app violet Transcribe control, a working in-panel chevron menu, and the existing teardrop drop / bounce intro.
+- **Live prompts** keep a smooth 15s countdown bar; **calendar prompts** show no timer and dismiss manually or one minute after the scheduled start.
+- **Recording pill** keeps the deployed compact→expanded morph; Mic uses a slash/color mute affordance with a fixed “Mic” label.
+
 ### Fixed
 - **Speaker-off meeting capture** uses a Core Audio process tap for native Teams/Zoom and, after the usual per-meeting confirm, for browser Meet/Teams/Zoom, so remote audio is still recorded when Mac speakers are muted or off.
 - **Menu bar panel** sizes to its actions instead of collapsing to a header-only strip, so Open, export, recent meetings, Settings, and Quit stay usable.
 - **Teams Accessibility scan** no longer crashes the app when a meeting UI node is released while TrueMinutes is reading controls.
+- **Internal signing pin** follows the active TrueMinutes Internal leaf so local and CI builds verify against the same certificate.
 
 ### Notes
 - Browser capture still requires explicit confirmation for that meeting and may include other tabs from the same browser.
-- Meeting leave detection, screen-share retention, recording cutoff, and pill chrome are unchanged.
+- Meeting leave detection, screen-share retention, and recording cutoff behavior are unchanged.
 - This update uses the existing internal signing channel and is not Apple notarized.
 
 ## [0.8.7] — 2026-10-05
