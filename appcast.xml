@@ -7,12 +7,12 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.8.9</title>
-      <pubDate>Tue, 06 Oct 2026 13:13:42 +0000</pubDate>
-      <sparkle:version>202610061358</sparkle:version>
+      <pubDate>Thu, 08 Oct 2026 11:14:35 +0000</pubDate>
+      <sparkle:version>202610081160</sparkle:version>
       <sparkle:shortVersionString>0.8.9</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.8.9 (build 202610061358)</p>
+<p>TrueMinutes 0.8.9 (build 202610081160)</p>
 <h3>Improved</h3>
 <ul>
 <li>Native titlebar and traffic lights stay visible, with green-button fullscreen toggling and Escape to exit fullscreen.</li>
@@ -34,9 +34,9 @@
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.9/TrueMinutes-0.8.9.dmg"
-        length="27876996"
+        length="27952817"
         type="application/octet-stream"
-        sparkle:edSignature="+elmjvu6caQLQpSi0WnIttSvcP4Ay/27fRSKmQNgucufp7+GpVCINaecpVtFY/Cp+7bOKJzLYPuLbjmUznwUAQ==" />
+        sparkle:edSignature="FtqwyUeYT+sDerugONxBdVAZmUGcvFsCLk1ivgzmg67xFAbhUXmaInkqVig7h/8uIV7h1Zdz+swiYLM6Ap9UDg==" />
     </item>
   </channel>
 </rss>
