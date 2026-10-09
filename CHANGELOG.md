@@ -2,9 +2,12 @@
 
 All notable changes to TrueMinutes releases.
 
-## [0.8.9] — 2026-10-06
+## [0.8.9] — 2026-10-09
 
 ### Improved
+- Browser meetings retain recording through tab switches and hidden controls while the meeting host remains running without hang-up evidence.
+- Installed meeting web apps receive better background Accessibility detection.
+- Live Whisper transcription retains more quiet and accented speech, with longer default chunks and improved decode recovery.
 - Native titlebar and traffic lights stay visible, with green-button fullscreen toggling and Escape to exit fullscreen.
 - Meeting prompts and the recording pill follow fullscreen meeting Spaces and display the meeting app icon.
 - The recording waveform moves more smoothly and stays inside the compact pill.

@@ -7,14 +7,17 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.8.9</title>
-      <pubDate>Thu, 08 Oct 2026 11:14:35 +0000</pubDate>
-      <sparkle:version>202610081160</sparkle:version>
+      <pubDate>Fri, 09 Oct 2026 05:52:17 +0000</pubDate>
+      <sparkle:version>202610090561</sparkle:version>
       <sparkle:shortVersionString>0.8.9</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.8.9 (build 202610081160)</p>
+<p>TrueMinutes 0.8.9 (build 202610090561)</p>
 <h3>Improved</h3>
 <ul>
+<li>Browser meetings retain recording through tab switches and hidden controls while the meeting host remains running without hang-up evidence.</li>
+<li>Installed meeting web apps receive better background Accessibility detection.</li>
+<li>Live Whisper transcription retains more quiet and accented speech, with longer default chunks and improved decode recovery.</li>
 <li>Native titlebar and traffic lights stay visible, with green-button fullscreen toggling and Escape to exit fullscreen.</li>
 <li>Meeting prompts and the recording pill follow fullscreen meeting Spaces and display the meeting app icon.</li>
 <li>The recording waveform moves more smoothly and stays inside the compact pill.</li>
@@ -34,9 +37,9 @@
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.9/TrueMinutes-0.8.9.dmg"
-        length="27952817"
+        length="27952866"
         type="application/octet-stream"
-        sparkle:edSignature="FtqwyUeYT+sDerugONxBdVAZmUGcvFsCLk1ivgzmg67xFAbhUXmaInkqVig7h/8uIV7h1Zdz+swiYLM6Ap9UDg==" />
+        sparkle:edSignature="KTFQFcmBD4t7E1ePT/Cl1WNbslIkiZNuBVcTOJo9PDLqL85nwhmPJXmE2iHbtialNMFBrJotqB9QmR6H8MHXDw==" />
     </item>
   </channel>
 </rss>
