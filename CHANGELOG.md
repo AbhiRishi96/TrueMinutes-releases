@@ -2,6 +2,46 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.9.0] — 2026-10-20
+
+### Highlights
+- **Live English captions** for paid-product meetings: native streaming speech recognition with realtime English display, typewriter turns, and cleaner punctuation/paragraphs.
+- **Appearance themes**: Slack-inspired BrandAccent palettes in Settings, with a clearer General layout.
+- **Recording pill waveform**: editable color, height, and vertical orientation with live preview.
+- **Meet / Edge PWA reliability**: active-call detection for Chromium Meet PWAs, FloatingPill mic sync restored, and auto-quit on real hang-up without breaking transcription.
+
+### New — Live speech & captions
+- Native speech router and route manifest for streaming ASR engines (Apple streaming, Whisper, sidecars, and managed challenger routes).
+- **EnglishCaptionController** path for high-quality English realtime captions; source language remains locked except for language ID.
+- Live transcript typewriter rows, soft-join of micro-finals, and punctuation applied once per turn (avoids one-word “Take./A./T.” fragments).
+- Phrase memory from right-click transcript edits so corrections stick across the session.
+- Language identification (ECAPA), speech evidence history UI, and ASR engine / native speech settings cards.
+- Indic translation and script-recovery stack (IndicTrans2, script recovery, Translate-Gemma, Apple local translator) behind Transcriber contracts.
+- Local ASR install/model store, session metrics/diagnostics, vocabulary and correction stores.
+- SpeechProbe QA target and extensive replay/soak/benchmark tests plus ASR eval scripts.
+
+### New — Appearance & pill
+- **BrandAccent** theme system (Slack-like horizontal swatches) wired through AppTheme / DesignTokens.
+- Floating pill waveform settings: color, bar height, vertical vs horizontal axis, synced preview.
+- Meeting detail and live transcript chrome updates for the new caption rows (island/pill morph policy unchanged aside from authorized waveform/settings work).
+
+### Improved — Meeting detection & mic
+- Edge / Chromium Google Meet PWA: activation usability re-arm; title-based join when Accessibility controls are barren; CGWindow titles such as `Google Meet` with speaker glyph treated as active call.
+- Chromium join inference hold narrowed to **unknown + empty controls** (barren-only), so prejoin flaps no longer latch mute or block leave/auto-quit.
+- **MicCapturePolicyEvaluator**: `barrenTitleKeepsMic`, `allowCaptureWhenMuteUnreadable`, and `allowExplicitIncludeWhileOwnedRecording` restore FloatingPill mute sync with Meet while an owned recording is active.
+- RecordingSession mic context uses process liveness checks for the mic policy.
+
+### Fixed
+- Fragmented live turns from punctuating every micro-final; cleanup now soft-joins and punctuates at live turn boundaries.
+- FloatingPill unmute stuck after Meet prejoin → joined transitions.
+- Auto-quit / mic sync regressions introduced while fixing PWA detection — leave and hang-up behavior restored without weakening live transcription.
+- CI Sparkle workflow keeps skipping `add-trusted-cert` when the TrueMinutes Internal identity is already valid.
+
+### Notes
+- Browser capture still requires explicit confirmation for that meeting and may include other tabs from the same browser.
+- Meeting leave detection, Teams screen-share retention, and recording cutoff policy are intentionally unchanged except for the barren-hold / mic-sync restores above.
+- This update uses the existing internal signing channel and is not Apple notarized.
+
 ## [0.8.9] — 2026-10-09
 
 ### Improved

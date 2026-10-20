@@ -6,40 +6,63 @@
     <description>TrueMinutes update feed</description>
     <language>en</language>
     <item>
-      <title>TrueMinutes 0.8.9</title>
-      <pubDate>Fri, 09 Oct 2026 05:52:17 +0000</pubDate>
-      <sparkle:version>202610090561</sparkle:version>
-      <sparkle:shortVersionString>0.8.9</sparkle:shortVersionString>
+      <title>TrueMinutes 0.9.0</title>
+      <pubDate>Tue, 20 Oct 2026 12:36:10 +0000</pubDate>
+      <sparkle:version>202610200001</sparkle:version>
+      <sparkle:shortVersionString>0.9.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.8.9 (build 202610090561)</p>
-<h3>Improved</h3>
+<h2>[0.9.0] — 2026-10-20</h2>
+<h3>Highlights</h3>
 <ul>
-<li>Browser meetings retain recording through tab switches and hidden controls while the meeting host remains running without hang-up evidence.</li>
-<li>Installed meeting web apps receive better background Accessibility detection.</li>
-<li>Live Whisper transcription retains more quiet and accented speech, with longer default chunks and improved decode recovery.</li>
-<li>Native titlebar and traffic lights stay visible, with green-button fullscreen toggling and Escape to exit fullscreen.</li>
-<li>Meeting prompts and the recording pill follow fullscreen meeting Spaces and display the meeting app icon.</li>
-<li>The recording waveform moves more smoothly and stays inside the compact pill.</li>
-<li>Meeting audio capture prefers a built-in device clock when listening through USB, Bluetooth, or external outputs, and discovers browser/Electron audio helpers.</li>
+<li><strong>Live English captions</strong> for paid-product meetings: native streaming speech recognition with realtime English display, typewriter turns, and cleaner punctuation/paragraphs.</li>
+<li><strong>Appearance themes</strong>: Slack-inspired BrandAccent palettes in Settings, with a clearer General layout.</li>
+<li><strong>Recording pill waveform</strong>: editable color, height, and vertical orientation with live preview.</li>
+<li><strong>Meet / Edge PWA reliability</strong>: active-call detection for Chromium Meet PWAs, FloatingPill mic sync restored, and auto-quit on real hang-up without breaking transcription.</li>
+</ul>
+<h3>New — Live speech &amp; captions</h3>
+<ul>
+<li>Native speech router and route manifest for streaming ASR engines (Apple streaming, Whisper, sidecars, and managed challenger routes).</li>
+<li><strong>EnglishCaptionController</strong> path for high-quality English realtime captions; source language remains locked except for language ID.</li>
+<li>Live transcript typewriter rows, soft-join of micro-finals, and punctuation applied once per turn (avoids one-word “Take./A./T.” fragments).</li>
+<li>Phrase memory from right-click transcript edits so corrections stick across the session.</li>
+<li>Language identification (ECAPA), speech evidence history UI, and ASR engine / native speech settings cards.</li>
+<li>Indic translation and script-recovery stack (IndicTrans2, script recovery, Translate-Gemma, Apple local translator) behind Transcriber contracts.</li>
+<li>Local ASR install/model store, session metrics/diagnostics, vocabulary and correction stores.</li>
+<li>SpeechProbe QA target and extensive replay/soak/benchmark tests plus ASR eval scripts.</li>
+</ul>
+<h3>New — Appearance &amp; pill</h3>
+<ul>
+<li><strong>BrandAccent</strong> theme system (Slack-like horizontal swatches) wired through AppTheme / DesignTokens.</li>
+<li>Floating pill waveform settings: color, bar height, vertical vs horizontal axis, synced preview.</li>
+<li>Meeting detail and live transcript chrome updates for the new caption rows (island/pill morph policy unchanged aside from authorized waveform/settings work).</li>
+</ul>
+<h3>Improved — Meeting detection &amp; mic</h3>
+<ul>
+<li>Edge / Chromium Google Meet PWA: activation usability re-arm; title-based join when Accessibility controls are barren; CGWindow titles such as <code>Google Meet</code> with speaker glyph treated as active call.</li>
+<li>Chromium join inference hold narrowed to <strong>unknown + empty controls</strong> (barren-only), so prejoin flaps no longer latch mute or block leave/auto-quit.</li>
+<li><strong>MicCapturePolicyEvaluator</strong>: <code>barrenTitleKeepsMic</code>, <code>allowCaptureWhenMuteUnreadable</code>, and <code>allowExplicitIncludeWhileOwnedRecording</code> restore FloatingPill mute sync with Meet while an owned recording is active.</li>
+<li>RecordingSession mic context uses process liveness checks for the mic policy.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li>Transient system-audio startup failures receive bounded retries; failed starts can be retried from the menu panel.</li>
-<li>Recording hold uses sustained meeting-input inactivity as additional hang-up evidence, while retaining browser mute and Accessibility-blackout safeguards.</li>
-<li>Green-button click interception is limited to the actual button and preserves modified clicks.</li>
+<li>Fragmented live turns from punctuating every micro-final; cleanup now soft-joins and punctuates at live turn boundaries.</li>
+<li>FloatingPill unmute stuck after Meet prejoin → joined transitions.</li>
+<li>Auto-quit / mic sync regressions introduced while fixing PWA detection — leave and hang-up behavior restored without weakening live transcription.</li>
+<li>CI Sparkle workflow keeps skipping <code>add-trusted-cert</code> when the TrueMinutes Internal identity is already valid.</li>
 </ul>
 <h3>Notes</h3>
 <ul>
 <li>Browser capture still requires explicit confirmation for that meeting and may include other tabs from the same browser.</li>
+<li>Meeting leave detection, Teams screen-share retention, and recording cutoff policy are intentionally unchanged except for the barren-hold / mic-sync restores above.</li>
 <li>This update uses the existing internal signing channel and is not Apple notarized.</li>
 </ul>
 ]]></description>
       <enclosure
-        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.8.9/TrueMinutes-0.8.9.dmg"
-        length="27952866"
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.9.0/TrueMinutes-0.9.0.dmg"
+        length="37858414"
         type="application/octet-stream"
-        sparkle:edSignature="KTFQFcmBD4t7E1ePT/Cl1WNbslIkiZNuBVcTOJo9PDLqL85nwhmPJXmE2iHbtialNMFBrJotqB9QmR6H8MHXDw==" />
+        sparkle:edSignature="jlfpsSbRhi51UcVUJUNIttm6Lknm9ErT3cRqwCub8sFNnfc2z3IxTTNw8+XdcROJvMDwiigNKW64iZ322ZshCg==" />
     </item>
   </channel>
 </rss>
