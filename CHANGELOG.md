@@ -2,6 +2,21 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.9.01] — 2026-10-25
+
+### Improved
+- **Transcript recovery** checks saved audio against transcript coverage and targets uncovered trailing audio, reducing unnecessary full-recording retries after a short capture gap.
+- **Speaker separation** assigns generic speaker labels using the saved microphone and meeting-audio tracks, with manual speaker correction when a label needs fixing.
+- **Transcript corrections** can be tied to matching source-track audio and retained locally; opt-in vocabulary learning supplies hints to later transcription.
+- **Recording reliability** preserves captured audio when live captions are unavailable and continues with post-recording transcription.
+- **Speech settings** add configurable final processing models and clearer transcript recovery controls.
+
+### Notes
+- Automatic speaker labels can be uncertain when speakers overlap or transcript rows contain multiple voices; users can correct the label.
+- Audio-backed transcript and speaker corrections are retained locally as feedback records. Stored audio examples are not yet used to train model weights.
+- Browser capture still requires explicit confirmation for that meeting and may include other tabs from the same browser.
+- This update uses the existing internal signing channel and is not Apple notarized.
+
 ## [0.9.0] — 2026-10-20
 
 ### Highlights
