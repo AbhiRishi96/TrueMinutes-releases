@@ -6,34 +6,32 @@
     <description>TrueMinutes update feed</description>
     <language>en</language>
     <item>
-      <title>TrueMinutes 0.9.01</title>
-      <pubDate>Sat, 24 Oct 2026 20:17:45 +0000</pubDate>
-      <sparkle:version>202610242067</sparkle:version>
-      <sparkle:shortVersionString>0.9.01</sparkle:shortVersionString>
+      <title>TrueMinutes 0.9.02</title>
+      <pubDate>Tue, 27 Oct 2026 06:19:05 +0000</pubDate>
+      <sparkle:version>202610270673</sparkle:version>
+      <sparkle:shortVersionString>0.9.02</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.9.01 (build 202610242067)</p>
+<p>TrueMinutes 0.9.02 (build 202610270673)</p>
 <h3>Improved</h3>
 <ul>
-<li><strong>Transcript recovery</strong> checks saved audio against transcript coverage and targets uncovered trailing audio, reducing unnecessary full-recording retries after a short capture gap.</li>
-<li><strong>Speaker separation</strong> assigns generic speaker labels using the saved microphone and meeting-audio tracks, with manual speaker correction when a label needs fixing.</li>
-<li><strong>Transcript corrections</strong> can be tied to matching source-track audio and retained locally; opt-in vocabulary learning supplies hints to later transcription.</li>
-<li><strong>Recording reliability</strong> preserves captured audio when live captions are unavailable and continues with post-recording transcription.</li>
-<li><strong>Speech settings</strong> add configurable final processing models and clearer transcript recovery controls.</li>
+<li><strong>Meeting organization</strong> groups recordings using their titles and transcript content, then keeps new meetings with the matching category.</li>
+<li><strong>Recording status</strong> makes microphone and meeting-audio activity visible in the expanded status pill, with live source levels and transcript updates.</li>
+<li><strong>Meeting controls</strong> use a more consistent layout across meeting detail and list views, with smoother recording and meeting prompts.</li>
+<li><strong>Capture reliability</strong> retains microphone capture through transient Slack accessibility gaps and improves meeting evidence selection across browser windows.</li>
+<li><strong>Live transcription</strong> follows newly recognized speech and improves speaker and audio-source activity feedback.</li>
 </ul>
 <h3>Notes</h3>
 <ul>
-<li>Automatic speaker labels can be uncertain when speakers overlap or transcript rows contain multiple voices; users can correct the label.</li>
-<li>Audio-backed transcript and speaker corrections are retained locally as feedback records. Stored audio examples are not yet used to train model weights.</li>
-<li>Browser capture still requires explicit confirmation for that meeting and may include other tabs from the same browser.</li>
+<li>Source-level stop-path investigation identified synchronous main-actor finalization work as a likely cause of brief UI stalls; an M4 Pro hang report is still needed to confirm the exact blocker on that device.</li>
 <li>This update uses the existing internal signing channel and is not Apple notarized.</li>
 </ul>
 ]]></description>
       <enclosure
-        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.9.01/TrueMinutes-0.9.01.dmg"
-        length="61448685"
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.9.02/TrueMinutes-0.9.02.dmg"
+        length="59918796"
         type="application/octet-stream"
-        sparkle:edSignature="+h99EUlYD+6+rZC4ULvWvxl4xW3dq6aqBnGl4gmNrKZJhb/bn0AJ4YnMXm3dnIj2yJZataMrraQlbuncCsZdDw==" />
+        sparkle:edSignature="U8wg9mOpIsDGZEjFvZidrGDmuL1puNDr53Ap0SReT37bRbKvsM+Nq/yWgRjtfrCRcTyVJrwb1Wl3DGUNB+3WDA==" />
     </item>
   </channel>
 </rss>

@@ -2,6 +2,19 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.9.02] — 2026-10-27
+
+### Improved
+- **Meeting organization** groups recordings using their titles and transcript content, then keeps new meetings with the matching category.
+- **Recording status** makes microphone and meeting-audio activity visible in the expanded status pill, with live source levels and transcript updates.
+- **Meeting controls** use a more consistent layout across meeting detail and list views, with smoother recording and meeting prompts.
+- **Capture reliability** retains microphone capture through transient Slack accessibility gaps and improves meeting evidence selection across browser windows.
+- **Live transcription** follows newly recognized speech and improves speaker and audio-source activity feedback.
+
+### Notes
+- Source-level stop-path investigation identified synchronous main-actor finalization work as a likely cause of brief UI stalls; an M4 Pro hang report is still needed to confirm the exact blocker on that device.
+- This update uses the existing internal signing channel and is not Apple notarized.
+
 ## [0.9.01] — 2026-10-25
 
 ### Improved
