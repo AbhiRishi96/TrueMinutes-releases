@@ -7,12 +7,12 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.9.03</title>
-      <pubDate>Thu, 29 Oct 2026 13:11:04 +0000</pubDate>
-      <sparkle:version>202610291377</sparkle:version>
+      <pubDate>Thu, 29 Oct 2026 13:22:26 +0000</pubDate>
+      <sparkle:version>202610291378</sparkle:version>
       <sparkle:shortVersionString>0.9.03</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.9.03 (build 202610291377)</p>
+<p>TrueMinutes 0.9.03 (build 202610291378)</p>
 <h3>Added</h3>
 <ul>
 <li><strong>OneDrive sync</strong> offers encrypted meeting-library sync through your OneDrive app folder, alongside Google Drive. One provider runs at a time, with pending-change checks before switching and recovery-key verification when connecting another Mac.</li>
@@ -35,7 +35,7 @@
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.9.03/TrueMinutes-0.9.03.dmg"
         length="60993506"
         type="application/octet-stream"
-        sparkle:edSignature="eaxmOJYVLYFJV220/gj768pBnEJp7XodETDSkOw4nurh6M+ILi+QnNGtk592HBf/LY3vEDsBzs/Hk47m/LVtDg==" />
+        sparkle:edSignature="e3onBbUF521FRTzMYdqx8UrNoPKkJMrRBfXUtzCNZ2k0QQZLIT+5JW2l5T+4elwVMZ6JDLl/MLqeW3F4oBEJDQ==" />
     </item>
   </channel>
 </rss>
