@@ -11,6 +11,7 @@ All notable changes to TrueMinutes releases.
 ### Improved
 - **Product design** adds shared glass surfaces, refreshed typography, original TrueMinutes branding, and responsive setup layouts with side-by-side model cards on wide windows.
 - **Speech setup** removes the unused Apple realtime language installer and settings. The active live transcription workflow continues to use WhisperKit; existing translation routes and model revisions are retained.
+- **Recording reliability** keeps capture alive when you focus a VDI/remote desktop (Citrix, Horizon, Windows App) during Slack, Teams, Meet, Zoom, or Webex — idle/post-call leave still ends the session.
 
 ### Notes
 - Sync does not upload audio recordings. Microsoft organization policies may restrict OneDrive consent or app-folder availability.

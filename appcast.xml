@@ -7,12 +7,12 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.9.03</title>
-      <pubDate>Thu, 29 Oct 2026 05:33:39 +0000</pubDate>
-      <sparkle:version>202610290575</sparkle:version>
+      <pubDate>Thu, 29 Oct 2026 10:52:58 +0000</pubDate>
+      <sparkle:version>202610291076</sparkle:version>
       <sparkle:shortVersionString>0.9.03</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.9.03 (build 202610290575)</p>
+<p>TrueMinutes 0.9.03 (build 202610291076)</p>
 <h3>Added</h3>
 <ul>
 <li><strong>OneDrive sync</strong> offers encrypted meeting-library sync through your OneDrive app folder, alongside Google Drive. One provider runs at a time, with pending-change checks before switching and recovery-key verification when connecting another Mac.</li>
@@ -22,6 +22,7 @@
 <ul>
 <li><strong>Product design</strong> adds shared glass surfaces, refreshed typography, original TrueMinutes branding, and responsive setup layouts with side-by-side model cards on wide windows.</li>
 <li><strong>Speech setup</strong> removes the unused Apple realtime language installer and settings. The active live transcription workflow continues to use WhisperKit; existing translation routes and model revisions are retained.</li>
+<li><strong>Recording reliability</strong> keeps capture alive when you focus a VDI/remote desktop (Citrix, Horizon, Windows App) during Slack, Teams, Meet, Zoom, or Webex — idle/post-call leave still ends the session.</li>
 </ul>
 <h3>Notes</h3>
 <ul>
@@ -32,9 +33,9 @@
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.9.03/TrueMinutes-0.9.03.dmg"
-        length="60988811"
+        length="60993512"
         type="application/octet-stream"
-        sparkle:edSignature="Oxzs0D+Zau0nGEAUzugj+w+3ptRMDvntoiiqDwWd07SEchMQ8u4EbejjbPPhx+fdFf3Czcyd1FDoEZYUgEGbDQ==" />
+        sparkle:edSignature="AofInIy0duZCrzETbpqNrJngax0k70FwA3l1+zcokJcYcVB1GSTdClgoQeULVq7mZaDtOdANDQcunwRQjr/DAA==" />
     </item>
   </channel>
 </rss>
