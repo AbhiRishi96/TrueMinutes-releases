@@ -6,32 +6,35 @@
     <description>TrueMinutes update feed</description>
     <language>en</language>
     <item>
-      <title>TrueMinutes 0.9.02</title>
-      <pubDate>Tue, 27 Oct 2026 06:19:05 +0000</pubDate>
-      <sparkle:version>202610270673</sparkle:version>
-      <sparkle:shortVersionString>0.9.02</sparkle:shortVersionString>
+      <title>TrueMinutes 0.9.03</title>
+      <pubDate>Thu, 29 Oct 2026 05:33:39 +0000</pubDate>
+      <sparkle:version>202610290575</sparkle:version>
+      <sparkle:shortVersionString>0.9.03</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.9.02 (build 202610270673)</p>
+<p>TrueMinutes 0.9.03 (build 202610290575)</p>
+<h3>Added</h3>
+<ul>
+<li><strong>OneDrive sync</strong> offers encrypted meeting-library sync through your OneDrive app folder, alongside Google Drive. One provider runs at a time, with pending-change checks before switching and recovery-key verification when connecting another Mac.</li>
+<li><strong>Account setup</strong> offers Google, Microsoft, or a local-only start. Calendar setup separately lets you choose the same account, a different account, or skip calendar access.</li>
+</ul>
 <h3>Improved</h3>
 <ul>
-<li><strong>Meeting organization</strong> groups recordings using their titles and transcript content, then keeps new meetings with the matching category.</li>
-<li><strong>Recording status</strong> makes microphone and meeting-audio activity visible in the expanded status pill, with live source levels and transcript updates.</li>
-<li><strong>Meeting controls</strong> use a more consistent layout across meeting detail and list views, with smoother recording and meeting prompts.</li>
-<li><strong>Capture reliability</strong> retains microphone capture through transient Slack accessibility gaps and improves meeting evidence selection across browser windows.</li>
-<li><strong>Live transcription</strong> follows newly recognized speech and improves speaker and audio-source activity feedback.</li>
+<li><strong>Product design</strong> adds shared glass surfaces, refreshed typography, original TrueMinutes branding, and responsive setup layouts with side-by-side model cards on wide windows.</li>
+<li><strong>Speech setup</strong> removes the unused Apple realtime language installer and settings. The active live transcription workflow continues to use WhisperKit; existing translation routes and model revisions are retained.</li>
 </ul>
 <h3>Notes</h3>
 <ul>
-<li>Source-level stop-path investigation identified synchronous main-actor finalization work as a likely cause of brief UI stalls; an M4 Pro hang report is still needed to confirm the exact blocker on that device.</li>
-<li>This update uses the existing internal signing channel and is not Apple notarized.</li>
+<li>Sync does not upload audio recordings. Microsoft organization policies may restrict OneDrive consent or app-folder availability.</li>
+<li>Automated regression tests passed; this release does not claim a new real-audio transcription accuracy qualification or second-Mac recovery qualification.</li>
+<li>This update uses the existing internal signing channel and is not Apple notarized. macOS may ask you to authorize saved credentials again.</li>
 </ul>
 ]]></description>
       <enclosure
-        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.9.02/TrueMinutes-0.9.02.dmg"
-        length="59918796"
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.9.03/TrueMinutes-0.9.03.dmg"
+        length="60988811"
         type="application/octet-stream"
-        sparkle:edSignature="U8wg9mOpIsDGZEjFvZidrGDmuL1puNDr53Ap0SReT37bRbKvsM+Nq/yWgRjtfrCRcTyVJrwb1Wl3DGUNB+3WDA==" />
+        sparkle:edSignature="Oxzs0D+Zau0nGEAUzugj+w+3ptRMDvntoiiqDwWd07SEchMQ8u4EbejjbPPhx+fdFf3Czcyd1FDoEZYUgEGbDQ==" />
     </item>
   </channel>
 </rss>

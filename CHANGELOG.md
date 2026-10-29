@@ -2,6 +2,21 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.9.03] — 2026-10-29
+
+### Added
+- **OneDrive sync** offers encrypted meeting-library sync through your OneDrive app folder, alongside Google Drive. One provider runs at a time, with pending-change checks before switching and recovery-key verification when connecting another Mac.
+- **Account setup** offers Google, Microsoft, or a local-only start. Calendar setup separately lets you choose the same account, a different account, or skip calendar access.
+
+### Improved
+- **Product design** adds shared glass surfaces, refreshed typography, original TrueMinutes branding, and responsive setup layouts with side-by-side model cards on wide windows.
+- **Speech setup** removes the unused Apple realtime language installer and settings. The active live transcription workflow continues to use WhisperKit; existing translation routes and model revisions are retained.
+
+### Notes
+- Sync does not upload audio recordings. Microsoft organization policies may restrict OneDrive consent or app-folder availability.
+- Automated regression tests passed; this release does not claim a new real-audio transcription accuracy qualification or second-Mac recovery qualification.
+- This update uses the existing internal signing channel and is not Apple notarized. macOS may ask you to authorize saved credentials again.
+
 ## [0.9.02] — 2026-10-27
 
 ### Improved
