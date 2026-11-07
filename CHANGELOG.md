@@ -2,6 +2,27 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.9.04] — 2026-11-08
+
+### Added
+- **Meeting memory** adds a rebuildable local search catalogue, hybrid retrieval, structured project context, recorded commitments, and source-backed decisions across meetings.
+- **Portable embeddings** adds an isolated embedding XPC service and support for a verified locally installed EmbeddingGemma model, with Apple embedding fallback when unavailable or incomplete. Model weights are not bundled.
+- **Answer review** adds bounded evidence review, optional separately installed independent review models on supported hardware, and exact transcript quotations when stronger wording cannot be verified.
+
+### Improved
+- **Grounding** validates final citations against current transcript rows, preserves tentative wording, constrains project scope before topic ranking, and avoids claiming that an uncompleted recorded commitment is currently open.
+- **Conversations** reliably reset and cancel requests; late results cannot overwrite a new conversation. Saved chats refresh without polling.
+- **Ask controls** use a compact scope/mode toolbar and grouped exports. Auto and Think deeper use different evidence and time budgets with the same selected model and source checks.
+- **Library count** shows all visible recordings and separately describes saved-transcript coverage.
+- **Home** moves Record in person to a prominent header action and adapts stats to the available width. Sidebar backgrounds remain continuous in windowed and fullscreen layouts.
+- **Idle UI** avoids publishing unchanged diagnostic text and removes a repeating Ask icon pulse.
+
+### Qualification and limitations
+- Real-corpus retrieval and native conversation, cancellation, citation navigation, scope, mode, and layout checks were exercised. Summarizer-generated references are provisional silver references, not human-reviewed factual accuracy labels.
+- Retrieval completeness, reliable live task status, useful verified synthesis, and a real future-recording-to-answer qualification remain open. Experimental model-extracted events were not promoted into production memory.
+- Think deeper expands evidence and time budgets; it does not guarantee a better answer or select a different reasoning model.
+- This update retains the existing internal signing channel and is not Apple notarized. Saved credentials may require Keychain authorization again.
+
 ## [0.9.03] — 2026-10-29
 
 ### Added

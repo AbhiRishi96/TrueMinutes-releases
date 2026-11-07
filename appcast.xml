@@ -6,36 +6,41 @@
     <description>TrueMinutes update feed</description>
     <language>en</language>
     <item>
-      <title>TrueMinutes 0.9.03</title>
-      <pubDate>Thu, 29 Oct 2026 13:22:26 +0000</pubDate>
-      <sparkle:version>202610291378</sparkle:version>
-      <sparkle:shortVersionString>0.9.03</sparkle:shortVersionString>
+      <title>TrueMinutes 0.9.04</title>
+      <pubDate>Sat, 07 Nov 2026 20:07:50 +0000</pubDate>
+      <sparkle:version>202611072081</sparkle:version>
+      <sparkle:shortVersionString>0.9.04</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.9.03 (build 202610291378)</p>
+<p>TrueMinutes 0.9.04 (build 202611072081)</p>
 <h3>Added</h3>
 <ul>
-<li><strong>OneDrive sync</strong> offers encrypted meeting-library sync through your OneDrive app folder, alongside Google Drive. One provider runs at a time, with pending-change checks before switching and recovery-key verification when connecting another Mac.</li>
-<li><strong>Account setup</strong> offers Google, Microsoft, or a local-only start. Calendar setup separately lets you choose the same account, a different account, or skip calendar access.</li>
+<li><strong>Meeting memory</strong> adds a rebuildable local search catalogue, hybrid retrieval, structured project context, recorded commitments, and source-backed decisions across meetings.</li>
+<li><strong>Portable embeddings</strong> adds an isolated embedding XPC service and support for a verified locally installed EmbeddingGemma model, with Apple embedding fallback when unavailable or incomplete. Model weights are not bundled.</li>
+<li><strong>Answer review</strong> adds bounded evidence review, optional separately installed independent review models on supported hardware, and exact transcript quotations when stronger wording cannot be verified.</li>
 </ul>
 <h3>Improved</h3>
 <ul>
-<li><strong>Product design</strong> adds shared glass surfaces, refreshed typography, original TrueMinutes branding, and responsive setup layouts with side-by-side model cards on wide windows.</li>
-<li><strong>Speech setup</strong> removes the unused Apple realtime language installer and settings. The active live transcription workflow continues to use WhisperKit; existing translation routes and model revisions are retained.</li>
-<li><strong>Recording reliability</strong> keeps capture alive when you focus a VDI/remote desktop (Citrix, Horizon, Windows App) during Slack, Teams, Meet, Zoom, or Webex — idle/post-call leave still ends the session.</li>
+<li><strong>Grounding</strong> validates final citations against current transcript rows, preserves tentative wording, constrains project scope before topic ranking, and avoids claiming that an uncompleted recorded commitment is currently open.</li>
+<li><strong>Conversations</strong> reliably reset and cancel requests; late results cannot overwrite a new conversation. Saved chats refresh without polling.</li>
+<li><strong>Ask controls</strong> use a compact scope/mode toolbar and grouped exports. Auto and Think deeper use different evidence and time budgets with the same selected model and source checks.</li>
+<li><strong>Library count</strong> shows all visible recordings and separately describes saved-transcript coverage.</li>
+<li><strong>Home</strong> moves Record in person to a prominent header action and adapts stats to the available width. Sidebar backgrounds remain continuous in windowed and fullscreen layouts.</li>
+<li><strong>Idle UI</strong> avoids publishing unchanged diagnostic text and removes a repeating Ask icon pulse.</li>
 </ul>
-<h3>Notes</h3>
+<h3>Qualification and limitations</h3>
 <ul>
-<li>Sync does not upload audio recordings. Microsoft organization policies may restrict OneDrive consent or app-folder availability.</li>
-<li>Automated regression tests passed; this release does not claim a new real-audio transcription accuracy qualification or second-Mac recovery qualification.</li>
-<li>This update uses the existing internal signing channel and is not Apple notarized. macOS may ask you to authorize saved credentials again.</li>
+<li>Real-corpus retrieval and native conversation, cancellation, citation navigation, scope, mode, and layout checks were exercised. Summarizer-generated references are provisional silver references, not human-reviewed factual accuracy labels.</li>
+<li>Retrieval completeness, reliable live task status, useful verified synthesis, and a real future-recording-to-answer qualification remain open. Experimental model-extracted events were not promoted into production memory.</li>
+<li>Think deeper expands evidence and time budgets; it does not guarantee a better answer or select a different reasoning model.</li>
+<li>This update retains the existing internal signing channel and is not Apple notarized. Saved credentials may require Keychain authorization again.</li>
 </ul>
 ]]></description>
       <enclosure
-        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.9.03/TrueMinutes-0.9.03.dmg"
-        length="60993506"
+        url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.9.04/TrueMinutes-0.9.04.dmg"
+        length="68510743"
         type="application/octet-stream"
-        sparkle:edSignature="e3onBbUF521FRTzMYdqx8UrNoPKkJMrRBfXUtzCNZ2k0QQZLIT+5JW2l5T+4elwVMZ6JDLl/MLqeW3F4oBEJDQ==" />
+        sparkle:edSignature="lFMIX0IPWyFXfuMejI3gPiJgHt/2zht6tir4ySz9+jzSHYLpJzQaOYSpcmIq7+xlTfRzJTKUhSqdnnZPR/kWBQ==" />
     </item>
   </channel>
 </rss>
