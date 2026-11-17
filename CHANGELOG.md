@@ -2,7 +2,13 @@
 
 All notable changes to TrueMinutes releases.
 
-## [0.9.04] — 2026-11-08
+## [0.9.04] — 2026-11-16
+
+### Fixed
+- **OneDrive connection** uses the identity already returned by Microsoft sign-in, avoiding an unnecessary profile request that could falsely report denied app-folder access.
+- **Switching cloud accounts** joins each provider's existing vault and preserves the previous account's key. Pending changes and conflicts must be resolved before switching.
+- **Vault recovery** restores verified keys without automatically clearing cloud files. Failed switches restore the previous provider and key.
+- **Library compatibility** preserves existing libraries when updating from recent development builds.
 
 ### Added
 - **Meeting memory** adds a rebuildable local search catalogue, hybrid retrieval, structured project context, recorded commitments, and source-backed decisions across meetings.
@@ -18,6 +24,7 @@ All notable changes to TrueMinutes releases.
 - **Idle UI** avoids publishing unchanged diagnostic text and removes a repeating Ask icon pulse.
 
 ### Qualification and limitations
+- OneDrive/Google Drive switching in both directions, encrypted catch-up, key recovery, and a full app restart were verified on one Mac. All original meeting and transcript IDs were retained. Second-Mac recovery and expired-token refresh remain separate qualification gates.
 - Real-corpus retrieval and native conversation, cancellation, citation navigation, scope, mode, and layout checks were exercised. Summarizer-generated references are provisional silver references, not human-reviewed factual accuracy labels.
 - Retrieval completeness, reliable live task status, useful verified synthesis, and a real future-recording-to-answer qualification remain open. Experimental model-extracted events were not promoted into production memory.
 - Think deeper expands evidence and time budgets; it does not guarantee a better answer or select a different reasoning model.

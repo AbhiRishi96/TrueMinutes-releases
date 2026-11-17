@@ -7,12 +7,19 @@
     <language>en</language>
     <item>
       <title>TrueMinutes 0.9.04</title>
-      <pubDate>Sat, 07 Nov 2026 20:07:50 +0000</pubDate>
-      <sparkle:version>202611072081</sparkle:version>
+      <pubDate>Tue, 17 Nov 2026 06:15:49 +0000</pubDate>
+      <sparkle:version>202611170682</sparkle:version>
       <sparkle:shortVersionString>0.9.04</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
       <description><![CDATA[
-<p>TrueMinutes 0.9.04 (build 202611072081)</p>
+<p>TrueMinutes 0.9.04 (build 202611170682)</p>
+<h3>Fixed</h3>
+<ul>
+<li><strong>OneDrive connection</strong> uses the identity already returned by Microsoft sign-in, avoiding an unnecessary profile request that could falsely report denied app-folder access.</li>
+<li><strong>Switching cloud accounts</strong> joins each provider's existing vault and preserves the previous account's key. Pending changes and conflicts must be resolved before switching.</li>
+<li><strong>Vault recovery</strong> restores verified keys without automatically clearing cloud files. Failed switches restore the previous provider and key.</li>
+<li><strong>Library compatibility</strong> preserves existing libraries when updating from recent development builds.</li>
+</ul>
 <h3>Added</h3>
 <ul>
 <li><strong>Meeting memory</strong> adds a rebuildable local search catalogue, hybrid retrieval, structured project context, recorded commitments, and source-backed decisions across meetings.</li>
@@ -30,6 +37,7 @@
 </ul>
 <h3>Qualification and limitations</h3>
 <ul>
+<li>OneDrive/Google Drive switching in both directions, encrypted catch-up, key recovery, and a full app restart were verified on one Mac. All original meeting and transcript IDs were retained. Second-Mac recovery and expired-token refresh remain separate qualification gates.</li>
 <li>Real-corpus retrieval and native conversation, cancellation, citation navigation, scope, mode, and layout checks were exercised. Summarizer-generated references are provisional silver references, not human-reviewed factual accuracy labels.</li>
 <li>Retrieval completeness, reliable live task status, useful verified synthesis, and a real future-recording-to-answer qualification remain open. Experimental model-extracted events were not promoted into production memory.</li>
 <li>Think deeper expands evidence and time budgets; it does not guarantee a better answer or select a different reasoning model.</li>
@@ -38,9 +46,9 @@
 ]]></description>
       <enclosure
         url="https://github.com/AbhiRishi96/TrueMinutes-releases/releases/download/v0.9.04/TrueMinutes-0.9.04.dmg"
-        length="68510743"
+        length="66802180"
         type="application/octet-stream"
-        sparkle:edSignature="lFMIX0IPWyFXfuMejI3gPiJgHt/2zht6tir4ySz9+jzSHYLpJzQaOYSpcmIq7+xlTfRzJTKUhSqdnnZPR/kWBQ==" />
+        sparkle:edSignature="kexE1jijtDhoyeTL5WbI6Bad+6CWPc5bgzK1nopKMlyWvUqLjSPzpr2G1WDpygO5KpcyGs7TkipxXHmrbamuDA==" />
     </item>
   </channel>
 </rss>
