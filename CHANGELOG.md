@@ -2,6 +2,22 @@
 
 All notable changes to TrueMinutes releases.
 
+## [0.9.05] — 2026-11-17
+
+### Added
+- **External transcripts** can be imported from TXT, Markdown, SRT, VTT, DOCX, selectable-text PDF, or pasted text. Review a preview and parser warnings before importing.
+- **Meeting mapping** adds an imported transcript to an existing meeting or creates a library meeting with your chosen title and date. Multiple sources retain their speaker labels and cue/page/paragraph locations.
+- **Source management** opens retained original files and removes individual imports while preserving recorded transcripts. Ask source links reveal the relevant transcript row.
+
+### Fixed
+- **Evidence safety** keeps imported subtitle times separate from recorded audio, preserves imports during audio recovery, and prevents imported corrections from being attached to unrelated audio.
+- **Summary review** preserves edited summaries and offers a separate generated draft; outdated drafts cannot replace notes after transcript changes.
+- **Cloud sync** includes imported text and provenance without uploading local source paths or original document files. Immediate import/removal changes receive distinct revisions.
+
+### Notes
+- Scanned PDFs need selectable text; OCR is not included. Imports are limited to 20 MiB per file.
+- This update retains the existing internal signing channel and is not Apple notarized.
+
 ## [0.9.04] — 2026-11-16
 
 ### Fixed
